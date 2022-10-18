@@ -1,1 +1,1 @@
-Queezos, the official quiz made by the dreamteam using the quiz API.
+Quizzos, the official quiz made by the dreamteam using the quiz API.
