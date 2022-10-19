@@ -1,8 +1,8 @@
 {
   "name": "quizzos",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Quizzos, the official quiz made by the dreamteam using the quiz API.",
+  "main": "src/main.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,6 +11,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vite": "^3.1.8"
-  }
+    "vite": "^3.1.8",
+    "scss": "^0.2.4",
+    "sass": "^1.26.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/onlineformapro/ofp-working/05-quizup/quizzos-sylvain-greg-thibault-max.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/onlineformapro/ofp-working/05-quizup/quizzos-sylvain-greg-thibault-max/issues"
+  },
+  "homepage": "https://gitlab.com/onlineformapro/ofp-working/05-quizup/quizzos-sylvain-greg-thibault-max#readme"
 }
