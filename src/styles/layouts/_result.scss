@@ -1,0 +1,100 @@
+.result {
+    background: #00AAFF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+
+    &__preview {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        font-size: 6vw;
+        background: #fff;
+        border: 5px solid black;
+        position: relative;
+        z-index: 2;
+        padding: 15px;
+        @extend %flex-center;
+        flex-direction: column;
+
+
+    }
+
+    &__circle-progress-bar {
+        width: 20vh;
+        height: 20vh;
+        border-radius: 50%;
+        @extend %flex-center;
+        background: #000;
+
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 10vh;
+            height: 10vh;
+            background: #fff;
+            border-radius: 50%;
+
+        }
+
+        &__value {
+            position: absolute;
+
+        }
+    }
+
+    &__btn {
+        color: #000;
+        background: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 5px 30px;
+        border: 5px solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px black;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        z-index: 2;
+
+        &:active {
+            box-shadow: 5px 5px black;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        top: 45vh;
+
+        img {
+            width: 40vw;
+        }
+    }
+
+    &__oval-form {
+        height: 150vh;
+        width: 35vh;
+        border-radius: 70% 30% 70% 30% / 70% 30% 70% 20%;
+        background: #91DAFE;
+        position: absolute;
+        transform: rotate(105deg);
+
+    }
+
+    &__down-form {
+        position: absolute;
+        height: 200vh;
+        width: 50%;
+        background: #735CDD;
+        transform: rotate(45deg) translate(150%, 60%);
+    }
+
+}
