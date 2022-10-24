@@ -1,9 +1,7 @@
 .result {
     background: #00AAFF;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-center;
     flex-direction: column;
     gap: 40px;
     position: relative;
@@ -14,6 +12,7 @@
         height: auto;
         border-radius: 10px;
         font-size: 6vw;
+        font-weight: 500;
         background: #fff;
         border: 5px solid black;
         position: relative;
@@ -30,7 +29,6 @@
         height: 20vh;
         border-radius: 50%;
         @extend %flex-center;
-        background: #000;
 
 
         &:before {
@@ -45,6 +43,7 @@
 
         &__value {
             position: absolute;
+            font-size: clamp(20px, 6vw, 32px);
 
         }
     }
@@ -53,33 +52,88 @@
         color: #000;
         background: #fff;
         text-decoration: none;
-        font-size: 24px;
+        font-size: clamp(16px, 6vw, 40px);
         font-weight: 500;
-        padding: 5px 30px;
+        padding: 10px 30px;
+        width: 75%;
+        height: 8vh;
+        @extend %flex-center;
         border: 5px solid black;
         border-radius: 10px;
         box-shadow: 10px 10px black;
-        transition: all 0.3s ease-in-out;
         position: relative;
         z-index: 1;
-
+        
         &:active {
-            box-shadow: 5px 5px black;
+            top: 10px;
+            left: 10px;
+            box-shadow: 0px 0px black;
         }
     }
 
     &__img {
         position: absolute;
-        z-index: 5;
+        z-index: 2;
         right: 0;
-        top: 45vh;
+        top: 44vh;
 
         img {
-            width: 40vw;
+            width: 35vw;
+        }
+    }
+    &__rectangle-form-top{
+        height: 200vh;
+        width: 200vh;
+        background: #8E7DDB;
+        position: absolute;
+        transform: rotate(25deg) translateY(-142vh) translateX(-118vh);
+        z-index: 20;
+
+        &:before{
+            content: "";
+            height: 200vh;
+            width: 200vh;
+            background: #8E7DDB;
+            position: absolute;
+            transform: translateY(15vw) translateX(-25vw);
+        }
+        &:after{
+            content: "";
+            height: 200vh;
+            width: 200vh;
+            background: #8E7DDB;
+            position: absolute;
+            transform: translateY(-10vw) translateX(35vw);
+        }
+    }
+    &__rectangle-form-bottom{
+        height: 200vh;
+        width: 200vh;
+        background: #8E7DDB;
+        position: absolute;
+        transform: rotate(25deg) translateY(140vh) translateX(110vh);
+        z-index: 20;
+        
+
+        &:before{
+            content: "";
+            height: 200vh;
+            width: 200vh;
+            background: #8E7DDB;
+            position: absolute;
+            transform: translateY(15vw) translateX(-25vw);
+        }
+        &:after{
+            content: "";
+            height: 200vh;
+            width: 200vh;
+            background: #8E7DDB;
+            position: absolute;
+            transform: translateY(-10vw) translateX(35vw);
         }
     }
 
-    &__oval-form {
+    &__oval-form-middle {
         height: 150vh;
         width: 35vh;
         border-radius: 70% 30% 70% 30% / 70% 30% 70% 20%;
@@ -89,12 +143,56 @@
 
     }
 
-    &__down-form {
+
+    &__teeth-form-down{
         position: absolute;
-        height: 200vh;
-        width: 50%;
-        background: #735CDD;
-        transform: rotate(45deg) translate(150%, 60%);
+        z-index: 15;
+        left: -6px;
+        bottom: calc(30vh - 130vw);
+        
+
+    
+        img {
+            width: 110vw;
+        }
+    }
+    &__teeth-form-up{
+        position: absolute;
+        z-index: 15;
+        left: -6px;
+        top: calc(20vh - 140vw);
+
+        img {
+            
+            width: 110vw;
+        }
     }
 
+}
+
+@media screen and (min-width: 600px) {
+    
+    .result {
+    &__teeth-form-up{
+        position: absolute;
+        z-index: 15;
+        left: -15px;
+        top: calc(20vh - 130vw);
+
+        img {
+            width: 110vw;
+        }
+    }
+    &__teeth-form-down{
+        position: absolute;
+        z-index: 15;
+        left: -15px;
+        bottom: calc(30vh - 130vw);
+      
+    
+        img {
+            width: 110vw;
+        }
+    }
+}   
 }
