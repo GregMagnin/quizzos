@@ -4,11 +4,12 @@ body {
   background: #FDFDFD;
 }
 
-h1, h2, h3, h4 {
+h1 {
   font-family: 'Boxing', sans-serif ;
 }
 
 section {
   height: 100vh;
   padding: 0 5vw;
+  overflow: hidden;
 }

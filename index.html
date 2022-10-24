@@ -1,60 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.example.com">
-    <!-- Robots -->
-    <meta name="robots" content="noindex, nofollow">
-    <!-- Device -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
-    <meta name="format-detection" content="telephone=no">
-    <!-- Title -->
-    <title>Quizzos</title>
-    <!-- Description -->
-    <meta name="description" content="Quiz">
-    <!-- Social -->
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Quizzos — Home">
-    <meta name="twitter:description" content="Home description.">
-    <meta name="twitter:image" content="#">
-    <!-- Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.example.com">
-    <meta property="og:title" content="Quizzos — Home">
-    <meta property="og:description" content="Home description.">
-    <meta property="og:image" content="#">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <!-- Icon & font -->
-    <meta name="theme-color" content="#fff">
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&f[]=boxing@400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.example.com">
+  <!-- Robots -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+  <meta name="format-detection" content="telephone=no">
+  <!-- Title -->
+  <title>Quizzos</title>
+  <!-- Description -->
+  <meta name="description" content="Quiz">
+  <!-- Social -->
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quizzos — Home">
+  <meta name="twitter:description" content="Home description.">
+  <meta name="twitter:image" content="#">
+  <!-- Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com">
+  <meta property="og:title" content="Quizzos — Home">
+  <meta property="og:description" content="Home description.">
+  <meta property="og:image" content="#">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Icon & font -->
+  <meta name="theme-color" content="#fff">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&f[]=boxing@400&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- <section class="homepage"></section>
-    <section class="lobby-page"></section>
-    <section class="number-question-page"></section>
-    <section class="level-page"></section>
-    <section class="category-page"></section>
-    <section class="question-page"></section> -->
-    <section class="result">
-        <div class="result__preview">
-           <p>RESULT</p>
-           <div class="result__circle-progress-bar" id="js-progress-bar">
-              <div class="result__circle-progress-bar__value" id="js-value-progress-bar">
-                 75%
-              </div>
-           </div>
-           <p class="result__nb-good-answer">4 out of 20</p>
-        </div>
-        <a href="#" class="result__btn">BACK TO HOME</a>
-        <div class="result__oval-form-middle"></div>
-        <div class="result__oval-form-bottom"></div>
-        <div class="result__rectangle-form-top"></div>
+<section class="homepage">
+  <div class="square"></div>
+  <div class="circle"></div>
+  <h1>
+    <img src="assets/quizzos.png" alt="">
+  </h1>
+  <img src="./assets/maskotte.png" alt="le gros cerveau">
+  <div class="get-started">
+    <a href="#"> GET STARTED</a>
+  </div>
+  <img class="arrow" src="assets/fleche.svg" alt="la fleche">
+</section>
+<section class="lobby-page"></section>
+<section class="number-question-page">
+   
+   <div class="background-blue-rectangle"></div>
+
+   <div class="background-pink-rectangle"></div>
+
+   <div class="title-box">
+   <h2>How many questions do you want ?</h2>
+ </div>
+
+ <input type="button" class="questions-box" value="5">
+ <input type="button" class="questions-box" value="10">
+ <input type="button" class="questions-box" value="15">
+ <input type="button" class="questions-box" value="20">
+
+ 
+</section>
+<section class="level-page"></section>
+<section class="category-page">
+  <div class="rect right"></div>
+  <div class="rect left"></div>
+  <div class="separator"></div>
+  <div class="title-categories">What’s your favorite category ?</div>
+  <div class="categories">
+    <span class="category">Linux</span>
+    <span class="category">DevOps</span>
+    <span class="category">Networking</span>
+    <span class="category">Programming</span>
+    <span class="category">Cloud</span>
+    <span class="category">Docker</span>
+    <span class="category">Kubernetes</span>
+    <span class="category">CMS</span>
+  </div>
+</section>
+<section class="question-page"></section>
+<section class="result">
+  <div class="result__preview">
+    <p>RESULT</p>
+    <div class="result__circle-progress-bar" id="js-progress-bar">
+      <div class="result__circle-progress-bar__value" id="js-value-progress-bar">
+        75%
+      </div>
+    </div>
+    <p class="result__nb-good-answer">4 out of 20</p>
+  </div>
+  <a href="#" class="result__btn">BACK TO HOME</a>
+  <div class="result__oval-form"></div>
+  <div class="result__rectangle-form-top"></div>
         <div class="result__rectangle-form-bottom"></div>
         <div class="result__teeth-form-down">
             <img src="assets/teeth-down.svg" alt="teeth form at the bottom of the page">
@@ -62,11 +104,11 @@
         <div class="result__teeth-form-up">
             <img src="assets/teeth-up.svg" alt="teeth form at the top of the page">
         </div>
-        <div class="result__img">
-           <img src="assets/quizzosResult.svg" alt="quizzos mascot representing a brain">
-        </div>
-     </section>
+  <div class="result__img">
+    <img src="assets/quizzosResult.svg" alt="quizzos mascot representing a brain">
+  </div>
+</section>
 
-    <script src="src/main.js" type="module"></script>
+<script src="src/main.js" type="module"></script>
 </body>
 </html>
