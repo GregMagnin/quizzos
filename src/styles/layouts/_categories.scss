@@ -52,7 +52,7 @@
     left: 62.5vw;
     background-color: #82D0D6;
     width: 37.5vw;
-    height: 49vh
+    height: 50vh
   }
 }
 
@@ -80,12 +80,12 @@
   height: 55vh;
   position: absolute;
   top: 39vh;
+  font-weight: 500;
 }
 .category {
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-top: 13.27vh;
   width: 39.74vw;
   height: 10.31vh;
   background-color: #fff;
@@ -93,5 +93,6 @@
   border-radius: 20px;
   font-size: clamp(16px, 20px, 20px);
   box-shadow: 10px 10px 0 black;
+  font-weight: 500;
   z-index: 1;
 }
