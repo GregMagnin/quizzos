@@ -6,6 +6,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
+  border: solid 5px black;
+  position: relative;
+  z-index: 90;
 }
 
 .square {
@@ -51,14 +55,14 @@ h1 {
 
 img {
   position: relative;
-  bottom: 9%;
-  padding: 5vh 0;
+  top: 10%;
   width: 110%;
 }
 
 
 
-a {
+.get-started {
+  margin-top: 22vh;
   width: 62vw;
   height: 10vh;
   color: #000;
@@ -66,7 +70,6 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 500;
-  padding: 10px 30px;
   border: 5px solid black;
   border-radius: 10px;
   box-shadow: 10px 10px black;
@@ -85,7 +88,7 @@ a {
 }
 
 .arrow {
-  height: 25vh;
+  height: 20vh;
   position: relative;
   top: 3%;
 }
