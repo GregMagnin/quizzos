@@ -1,7 +1,4 @@
 @import 'styles/reset';
 @import 'styles/base';
-
-body {
-  background: red;
-  color: white;
-}
+@import 'styles/abstracts/placeholders';
+@import 'styles/layouts/result';
