@@ -1,21 +1,21 @@
 .category-page {
   color: #000;
   background-color: #2BC4CE;
-  position: relative;
   padding: 0 0;
 }
 
 .title-categories {
+  font-weight: 500;
   display: flex;
+  margin-left: 4vw;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 89.74vw;
   height: 23.7vh;
   background-color: #fff;
-  position: absolute;
+  position: relative;
   top: 6.16vh;
-  left: 5.9vw;
   border: 5px solid #000;
   border-radius: 10px;
   font-size: clamp(32px, 40px, 40px);
@@ -32,6 +32,7 @@
   background-color: #FEC979;
   position: absolute;
   left: 50vw;
+
   &::after {
     content: '';
     position: absolute;
@@ -46,13 +47,14 @@
   background-color: #FFAA2B;
   position: absolute;
   top: 50vh;
+
   &::after {
     content: '';
     position: absolute;
     left: 62.5vw;
     background-color: #82D0D6;
     width: 37.5vw;
-    height: 49vh
+    height: 50vh
   }
 }
 
@@ -62,36 +64,45 @@
   background-color: #000;
   position: absolute;
   left: 50vw;
+
   &::after {
     content: "";
-    width:100vw;
+    width: 100vw;
     height: 5px;
     background-color: #000;
-    position:absolute;
+    position: absolute;
     top: 50vh;
     left: -50vw;
   }
 }
 
 .categories {
+  padding-top: 1vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   height: 55vh;
   position: absolute;
   top: 39vh;
+  font-weight: 500;
 }
+
 .category {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // margin-top: 13.27vh;
+  text-align: center;
   width: 39.74vw;
   height: 10.31vh;
   background-color: #fff;
   border: 5px solid #000;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: clamp(16px, 20px, 20px);
   box-shadow: 10px 10px 0 black;
+  font-weight: 500;
+  position: relative;
   z-index: 1;
+
+  &:active {
+    top: 10px;
+    left: 10px;
+    box-shadow: 0px 0px black;
+  }
 }

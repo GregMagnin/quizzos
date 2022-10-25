@@ -48,6 +48,7 @@
   </div>
   <img class="arrow" src="assets/fleche.svg" alt="la fleche">
 </section>
+
 <section class="lobby-page">
     <div class="square"></div>
     <div class="circle"></div>
@@ -57,39 +58,68 @@
       <li><a href="#">NUMBERS OF QUESTIONS</a></li>
       <li>START</li>
     </ul>
-  </section>
+</section>
+
 <section class="number-question-page">
    <div class="background-blue-rectangle"></div>
    <div class="background-pink-rectangle"></div>
    <div class="title-box">
    <h2>How many questions do you want ?</h2>
  </div>
-
  <input type="button" class="questions-box" value="5">
  <input type="button" class="questions-box" value="10">
  <input type="button" class="questions-box" value="15">
- <input type="button" class="questions-box" value="20">
-
-
+ <input type="button" class="questions-box question-box-4" value="20">
 </section>
-<section class="level-page"></section>
+
+<section class="level-page">
+  <div class="green-circle-top-left"></div>
+  <div class="green-circle-right"></div>
+  <div class="green-circle-bottom-left"></div>
+
+  <div class="title-box-level">
+    <h2>Choose your level</h2>
+  </div>
+  <input type="button" class="level-box" value="Easy" />
+  <input type="button" class="level-box" value="Medium" />
+  <input type="button" class="level-box" value="Hard" />
+  <input type="button" class="level-box level-box-4" value="Legend" />
+</section>
+
 <section class="category-page">
   <div class="rect right"></div>
   <div class="rect left"></div>
   <div class="separator"></div>
   <div class="title-categories">What’s your favorite category ?</div>
   <div class="categories">
-    <span class="category">Linux</span>
-    <span class="category">DevOps</span>
-    <span class="category">Networking</span>
-    <span class="category">Programming</span>
-    <span class="category">Cloud</span>
-    <span class="category">Docker</span>
-    <span class="category">Kubernetes</span>
-    <span class="category">CMS</span>
+    <input type="text" class="category" value="Linux">
+    <input type="text" class="category" value="DevOps">
+    <input type="text" class="category" value="Networking">
+    <input type="text" class="category" value="Programming">
+    <input type="text" class="category" value="Cloud">
+    <input type="text" class="category" value="Docker">
+    <input type="text" class="category" value="Kubernetes">
+    <input type="text" class="category" value="CMS">
   </div>
 </section>
-<section class="question-page"></section>
+
+<section class="question-page">
+   <div class="ellipsis"></div>
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="questions">
+            <span class="number-question">Question 10:</span>
+            <span class="question">Parmis ces quatre réponses qui a le plus grand cerveau?</span>
+        </div>
+        <span class="rest-question">Plus que 5 questions !</span>
+        <div class="responses">
+            <input type="text" class="response" value="La réponse A">
+            <input type="text" class="response" value="La réponse B">
+            <input type="text" class="response" value="La réponse C">
+            <input type="text" class="response" value="La réponse D">
+        </div>
+</section>
+
 <section class="result">
   <div class="result__preview">
     <p>RESULT</p>
