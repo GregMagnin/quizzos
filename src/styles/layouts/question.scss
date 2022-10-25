@@ -88,7 +88,6 @@
 }
 
 .response {
-    display: flex;
     width: 87.18vw;
     height: 9.95vh;
     border: 5px solid #000;
@@ -96,8 +95,7 @@
     background-color: #fff;
     font-size: clamp(16px, 20px, 20px);
     font-weight: 500;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     box-shadow: 10px 10px 0 black;
     z-index: 1;
 }
