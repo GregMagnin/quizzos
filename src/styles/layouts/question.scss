@@ -1,107 +1,110 @@
 .question-page {
-    background-color: #29FF58;
-    margin: 0 0;
-    padding: 0 0;
-    position: relative;
-    overflow: hidden;
-    z-index: 5;
+  background-color: #29FF58;
+  z-index: 5;
 }
 
 .ellipsis {
-    width: 91.03vw;
-    height: 59vh;
-    background-color: #D2FFDC;
-    border-radius: 0% 21% 100% 0% / 0% 42% 58% 55% ;
-    z-index: 0;
-    position: absolute;
+  width: 91.03vw;
+  height: 59vh;
+  background-color: #D2FFDC;
+  border-radius: 0% 21% 100% 0% / 0% 42% 58% 55%;
+  z-index: 0;
+  position: absolute;
+  right:10% ;
 }
 
 .rect1 {
-    width: 162.84vw;
-    height: 36.06vh;
-    transform: rotate(-17.11deg);
-    background-color: #00ACEE;
-    position: absolute;
-    border-top: 5px solid #000;
-    top: 75vh;
-    left: -12vw;
-    z-index: 0;
+  width: 162.84vw;
+  height: 36.06vh;
+  transform: rotate(-17.11deg);
+  background-color: #00ACEE;
+  position: absolute;
+  border-top: 5px solid #000;
+  top: 75vh;
+  left: -12vw;
+  z-index: 0;
 }
 
 .rect2 {
-    position: absolute;
-    width: 146.28vw;
-    height:36.06vh;
-    transform: rotate(-17.11deg);
-    border-radius: 25px;
-    background-color: #AEE5FA;
-    top: 85vh;
-    left: 50vw;
-    z-index: 0;
+  position: absolute;
+  width: 146.28vw;
+  height: 36.06vh;
+  transform: rotate(-17.11deg);
+  border-radius: 25px;
+  background-color: #AEE5FA;
+  top: 85vh;
+  left: 50vw;
+  z-index: 0;
 }
 
 .questions {
-    display: flex;
-    flex-direction: column;
-    border: 5px solid #000;
-    width: 89.74vw;
-    height: 35.55vh;
-    background-color: #fff;
-    border-radius: 5px;
-    position: absolute;
-    top: 4.86vh;
-    z-index: 1;
-    margin: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #000;
+  width: 89.74vw;
+  height: 35.55vh;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 4.86vh;
+  z-index: 1;
 }
 
 .number-question {
-    margin-top: 2.49vh;
-    margin-left: 4.36vw;
-    font-size: clamp(32px, 40px, 40px);
-    font-weight: 500;
+  margin-top: 2.49vh;
+  margin-left: 4.36vw;
+  font-size: clamp(32px, 40px, 40px);
+  font-weight: 500;
 }
 
 .question {
-    margin-top: 4.74vh;
-    margin-left: 4.36vw;
-    font-size: clamp(24px, 30px, 30px);
-    font-weight: 500;
+  margin-top: 4.74vh;
+  margin-left: 4.36vw;
+  font-size: clamp(24px, 30px, 30px);
+  font-weight: 500;
 }
 
 .rest-question {
-    width: 100vw;
-    text-align: center;
-    position: absolute;
-    top: 44vh;
-    font-size: clamp(20px, 26px, 26px);
-    
+  font-weight: 500;
+  width: 100vw;
+  text-align: center;
+  position: absolute;
+  padding-right: 5vw;
+  top: 44vh;
+  font-size: clamp(10px, 16px, 16px);
 }
 
 .responses {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    align-items: center;
-    justify-content: space-around;
-    top: 49vh;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 49vh;
+  position: relative;
+  padding-bottom: 2vh;
+  input {
+    margin-bottom: 3vh;
+  }
 }
 
+
 .response {
-    width: 87.18vw;
-    height: 9.95vh;
-    border: 5px solid #000;
-    border-radius: 10px;
-    background-color: #fff;
-    font-size: clamp(16px, 20px, 20px);
-    font-weight: 500;
-    text-align: center;
-    box-shadow: 10px 10px 0 black;
-    position: relative;
-    z-index: 1;
-    &:active {
-        top: 10px;
-        left: 10px;
-        box-shadow: 0px 0px black;
-    }
+  width: 87.18vw;
+  height: 9.95vh;
+  border: 5px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: clamp(16px, 20px, 20px);
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 10px 10px 0 black;
+  position: relative;
+  z-index: 1;
+
+  &:active {
+    top: 10px;
+    left: 10px;
+    box-shadow: 0px 0px black;
+  }
 }
