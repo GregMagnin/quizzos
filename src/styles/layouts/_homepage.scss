@@ -7,7 +7,7 @@
   border: solid 5px black;
   position: relative;
   z-index: 90;
-}
+
 
 .square {
   width: 160vw;
@@ -87,6 +87,7 @@ img {
 .arrow {
   height: 20vh;
   position: relative;
-  top: 3%;
+  top: 0;
+  }
 }
 
