@@ -2,8 +2,8 @@ let progressBar = document.getElementById('js-progress-bar');
 let valueProgressBar = document.getElementById('js-value-progress-bar');
 
 let progressValue = 0;
-let progressEndValue = 85;
-let speedAnimation = 30;
+let progressEndValue = 75;
+let speedAnimation = 25;
 
 let progressAnimation = setInterval(() => {
     progressValue++;
