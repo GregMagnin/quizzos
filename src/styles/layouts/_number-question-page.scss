@@ -1,21 +1,24 @@
 .number-question-page {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 
 
 .title-box {
     @extend %title-box;
-    margin-top: 20px;
+    margin-top: 50px;
    
 }
 
 
 .questions-box {
     @extend %number-box;
+}
+
+.question-box-4 {
+    margin-bottom: 50px;
 }
 
 .background-blue-rectangle {
