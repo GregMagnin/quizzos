@@ -173,6 +173,18 @@
 @media screen and (min-width: 600px) {
     
     .result {
+
+    &__img {
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            top: 44vh;
+    
+            img {
+                width: 30vw;
+            }
+        }
+
     &__teeth-form-up{
         position: absolute;
         z-index: 15;
@@ -180,7 +192,7 @@
         top: calc(20vh - 130vw);
 
         img {
-            width: 110vw;
+            width: 105vw;
         }
     }
     &__teeth-form-down{
@@ -191,7 +203,33 @@
       
     
         img {
-            width: 110vw;
+            width: 105vw;
+        }
+    }
+    &__rectangle-form-bottom{
+        height: 200vh;
+        width: 200vh;
+        background: #8E7DDB;
+        position: absolute;
+        transform: rotate(25deg) translateY(1450vh) translateX(110vh);
+        z-index: 20;
+        
+
+        &:before{
+            content: "";
+            height: 200vh;
+            width: 200vh;
+            background: #8E7DDB;
+            position: absolute;
+            transform: translateY(15vw) translateX(-25vw);
+        }
+        &:after{
+            content: "";
+            height: 200vh;
+            width: 200vh;
+            background: #8E7DDB;
+            position: absolute;
+            transform: translateY(-10vw) translateX(35vw);
         }
     }
 }   
