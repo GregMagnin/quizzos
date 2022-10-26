@@ -1,2 +1,6 @@
 import './style.scss'
-import '/src/scripts/result.js'
+import ROUTER from "./router/router.js";
+
+window.addEventListener('load', async () => {
+    await ROUTER();
+});
