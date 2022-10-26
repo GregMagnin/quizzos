@@ -7,16 +7,18 @@ render: async() => {
   <div class="separator"></div>
   <div class="title-categories">What’s your favorite category ?</div>
   <div class="categories">
-    <input type="text" class="category" value="Linux">
-    <input type="text" class="category" value="DevOps">
-    <input type="text" class="category" value="Networking">
-    <input type="text" class="category" value="Programming">
-    <input type="text" class="category" value="Cloud">
-    <input type="text" class="category" value="Docker">
-    <input type="text" class="category" value="Kubernetes">
-    <input type="text" class="category" value="CMS">
+    <input type="button" class="category" value="Linux">
+    <input type="button" class="category" value="DevOps">
+    <input type="button" class="category" value="Networking">
+    <input type="button" class="category" value="Programming">
+    <input type="button" class="category" value="Cloud">
+    <input type="button" class="category" value="Docker">
+    <input type="button" class="category" value="Kubernetes">
+    <input type="button" class="category" value="CMS">
   </div>
 </section>
 `
+},
+after_render: async () => {
 }
 }

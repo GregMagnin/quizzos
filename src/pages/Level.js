@@ -15,5 +15,7 @@ export default {
   <input type="button" class="level-box level-box-4" value="Legend" />
 </section>
 `
-  }
+},
+after_render: async () => {
 }
+  }

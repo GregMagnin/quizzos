@@ -11,12 +11,14 @@ export default {
         </div>
         <span class="rest-question">Plus que 5 questions !</span>
         <div class="responses">
-            <input type="text" class="response" value="La réponse A">
-            <input type="text" class="response" value="La réponse B">
-            <input type="text" class="response" value="La réponse C">
-            <input type="text" class="response" value="La réponse D">
+            <input type="button" class="response" value="La réponse A">
+            <input type="button" class="response" value="La réponse B">
+            <input type="button" class="response" value="La réponse C">
+            <input type="button" class="response" value="La réponse D">
         </div>
 </section>
 `
+    },
+    after_render: async () => {
     }
 }

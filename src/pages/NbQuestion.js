@@ -13,5 +13,7 @@ export default {
  <input type="button" class="questions-box question-box-4" value="20">
 </section>
 `
+  },
+  after_render: async () => {
   }
 }

@@ -9,10 +9,13 @@ export default {
 </h1>
 <img src="./assets/maskotte.png" alt="le gros cerveau">
 <div class="get-started">
-  <a href="#"> GET STARTED</a>
+  <a href="#lobby" id="started"> GET STARTED</a>
 </div>
 <img class="arrow" src="assets/fleche.svg" alt="la fleche">
 </section>
 `;
   }
-}
+  ,
+  after_render: async () => {
+  }
+  }
