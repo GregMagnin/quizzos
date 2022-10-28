@@ -1,20 +1,23 @@
 import { gsap } from "gsap";
 
 const UP = document.querySelector(".result__teeth-form-up");
+const UPSQUARE = document.querySelector(".result__rectangle-form-top");
 const DOWN = document.querySelector(".result__teeth-form-down");
+const DOWNSQUARE = document.querySelector(".result__rectangle-form-bottom");
 
-const TL = gsap.timeline();
+const BTN = document.querySelector('.result__btn')
 
-function delay(n) {
-    return new Promise((done) => {
-        setTimeout(() => {
-            done();
-        }, n);
-    });
-}
+BTN.addEventListener('click', () => {
+    const TL = gsap.timeline();
 
-const done = this.async();
-TL.to(UP, { top: "-20%", ease: "power2.out", duration: 0.5 });
-TL.to(DOWN, { bottom: "0%", ease: "power2.out", duration: 0.5 });
-await delay(1000);
-done();
+TL.to(UP, { top: "-9%", ease: "power2.out", duration: 0.5 });
+TL.to(DOWN, { bottom: "0%", ease: "power2.out", duration: 0.5 }, "<");
+TL.to(UPSQUARE, { top: "-5%", ease: "power2.out", duration: 0.5 });
+TL.to(DOWNSQUARE, { bottom: "6%", ease: "power2.out", duration: 0.5}, "<");
+
+setTimeout(() => {
+
+    location.hash = "#"
+}, 1500)
+})
+
