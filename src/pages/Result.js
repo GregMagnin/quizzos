@@ -1,5 +1,5 @@
 export default {
-    render: async() => {
+    render: async () => {
         return `
         <section class="result">
           <div class="result__preview">
@@ -11,10 +11,10 @@ export default {
             </div>
             <p class="result__nb-good-answer">4 out of 20</p>
           </div>
-          <a href="#" class="result__btn">BACK TO HOME</a>
+          <a class="result__btn">BACK TO HOME</a>
           <div class="result__oval-form"></div>
           <div class="result__rectangle-form-top"></div>
-                <div class="result__rectangle-form-bottom"></div>
+          <div class="result__rectangle-form-bottom"></div>
                 <div class="result__teeth-form-down">
                     <img src="assets/teeth-down.svg" alt="teeth form at the bottom of the page">
                 </div>
@@ -25,9 +25,10 @@ export default {
             <img src="assets/quizzosResult.svg" alt="quizzos mascot representing a brain">
           </div>
         </section>
-        `
+        `;
     },
     after_render: async () => {
-        await import('../scripts/progressBar');
-    }
-}
+        await import("../scripts/progressBar");
+        await import("../scripts/ClosingPageAnimation");
+    },
+};
