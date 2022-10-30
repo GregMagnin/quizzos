@@ -8,11 +8,12 @@ export default {
       <li><a href="#categories">CATEGORY</a></li>
       <li><a href="#level">DIFFICULTY</a></li>
       <li><a href="#nbquestion">NUMBERS OF QUESTIONS</a></li>
-      <li><a href="#questions">START</a></li>
+      <li><a href="#questions" id="start">START</a></li>
     </ul>
 </section>
 `
 },
 after_render: async () => {
+  await import("../scripts/start-quiz");
 }
   }
