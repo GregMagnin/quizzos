@@ -12,7 +12,7 @@ export default {
   <a href="#lobby" id="started"> GET STARTED</a>
 </div>
 <img class="arrow" src="assets/fleche.svg" alt="la fleche">
-</section>
+</section> 
 `;
   }
   ,
