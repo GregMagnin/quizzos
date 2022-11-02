@@ -22,7 +22,7 @@ export default {
         let openingAnimationURL = "?OpeningAnimation";
         let test = document.location.search;
         console.log(test);
-        await import("../scripts/openingPageAnimation");
+        await import("../animations/openingPageAnimation");
 
         if (test !== openingAnimationURL) {
             const UP = document.querySelector(".teeth-form-up");

@@ -1,8 +1,15 @@
 let progressBar = document.getElementById('js-progress-bar');
 let valueProgressBar = document.getElementById('js-value-progress-bar');
 
+let goodAnswer = parseInt(localStorage.getItem('number_good_answers'))
+let nbOfQuestions = parseInt(localStorage.getItem('questions'))
+let goodAnswerText = document.getElementById('goodAnswer');
+goodAnswerText.innerText  = localStorage.getItem('number_good_answers');
+let nbOfQuestionsText = document.getElementById('nbOfQuestions');
+nbOfQuestionsText.innerText  = localStorage.getItem('questions');
+
 let progressValue = 0;
-let progressEndValue = 62;
+let progressEndValue = Math.trunc((goodAnswer / nbOfQuestions) * 100);
 let speedAnimation = 25;
 
 let progressAnimation = setInterval(() => {
