@@ -1,7 +1,7 @@
 export default {
-  render: async() => {
-    return  `
-<section class="homepage">
+    render: async () => {
+        return `
+<section class="homepage" id="homepage">
 <div class="square"></div>
 <div class="circle"></div>
 <h1>
@@ -14,8 +14,26 @@ export default {
 <img class="arrow" src="assets/fleche.svg" alt="la fleche">
 </section> 
 `;
-  }
-  ,
-  after_render: async () => {
-  }
-  }
+    },
+    after_render: async () => {
+        let jaw = await import("../components/jaw");
+        let homepage_section = document.getElementById("homepage");
+        homepage_section.innerHTML += jaw.default;
+        let openingAnimationURL = "?OpeningAnimation";
+        let test = document.location.search;
+        console.log(test);
+        await import("../scripts/openingPageAnimation");
+
+        if (test !== openingAnimationURL) {
+            const UP = document.querySelector(".teeth-form-up");
+            const UPSQUARE = document.querySelector(".rectangle-form-top");
+            const DOWN = document.querySelector(".teeth-form-down");
+            const DOWNSQUARE = document.querySelector(".rectangle-form-bottom");
+
+            UP.style.display = "none";
+            DOWN.style.display = "none";
+            UPSQUARE.style.display = "none";
+            DOWNSQUARE.style.display = "none";
+        }
+    },
+};
