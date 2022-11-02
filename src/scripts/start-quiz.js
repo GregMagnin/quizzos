@@ -1,6 +1,7 @@
 let start = document.getElementById('start');
 let categoryresponse = ""
 let levelresponse = ""
+let nbquestions = "20"
 import {ENDPOINT} from '../../config.ex';
 import {TOKEN} from '../../config';
 
@@ -19,6 +20,10 @@ if (localStorage.getItem('categorie') !== null ) {
 if (localStorage.getItem('level') !== null ) {
         levelresponse = "&difficulty=" + localStorage.getItem('level')
         }
+if (localStorage.getItem('questions') !== null) {
+    nbquestions = localStorage.getItem('questions')
+}
+
 
 async function fetchAll() {
     const RESPONSE = await fetch(ENDPOINT + categoryresponse + levelresponse, initHeader);
@@ -26,8 +31,9 @@ async function fetchAll() {
 }
 
 let startquiz = start.addEventListener ('click', async (event) => {
-    console.log(fetchAll())
-    await fetchAll()
+    await fetchAll();
+    localStorage.setItem('number_good_answers', "0");
+    localStorage.setItem('iteration_question', "1");
     location.replace('#questions');
 })
 
