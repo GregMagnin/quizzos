@@ -6,7 +6,7 @@ export default {
     <div class="rect1"></div>
     <div class="rect2"></div>
     <div class="questions">
-        <span class="number-question">Question 10:</span>
+        <span class="number-question">Question <span id="iteration_question"></span>:</span>
         <span class="question" id="question"></span>
     </div>
     <span class="rest-question">Plus que 5 questions !</span>
