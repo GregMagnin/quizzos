@@ -8,14 +8,16 @@ let initHeader = { method: 'GET',
                mode: 'cors',
                cache: 'default' };
 
+let iteration = document.getElementById('iteration_question');
 let quest = document.getElementById('question');
 let answers = document.getElementById('answers');
 let answer_a = document.getElementById('answer_a');
 let answer_b= document.getElementById('answer_b');
 let answer_c = document.getElementById('answer_c');
 let answer_d = document.getElementById('answer_d');
-let number_question = 5;
-let iteration_question = 1;
+let number_question = parseInt(localStorage.getItem('questions'));
+let iteration_question = parseInt(localStorage.getItem('iteration_question'));
+let number_good_answers = parseInt(localStorage.getItem('number_good_answers'));
 
     async function getDataAsync() {
         let response = await fetch(ENDPOINT, initHeader);
@@ -23,11 +25,10 @@ let iteration_question = 1;
     }
 
     let response = await getDataAsync();
-    console.log(response);
 
 if (response[0]['multiple_correct_answers'] === 'false') {
 
-
+    iteration.innerText = localStorage.getItem('iteration_question');
     quest.innerText = response[0]['question'];
     answer_a.innerText = response[0]['answers']['answer_a'];
     answer_b.innerText = response[0]['answers']['answer_b'];
@@ -48,18 +49,18 @@ if (response[0]['multiple_correct_answers'] === 'false') {
         goodAnswerElement.style.backgroundColor = "green";
 
         if (goodAnswerElement === e.target) {
-
-            localStorage.setItem("number_good_answers", '3');
+            number_good_answers++;
+            localStorage.setItem("number_good_answers", (number_good_answers.toString()));
             console.log("bonnes réponses: " + localStorage.getItem("number_good_answers"));
         }
-        if (number_question >= iteration_question) {
+        if (number_question > iteration_question) {
             iteration_question++;
+            localStorage.setItem('iteration_question', (iteration_question.toString()));
             setTimeout(document.location.reload(true), 2000);
         } else {
-            document.location.href = './src/pages/Result';
+            document.location.href = '#result';
         }
     })
-    console.log(iteration_question);
 }
 else {
     document.location.reload(true);
