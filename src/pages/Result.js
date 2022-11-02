@@ -1,5 +1,5 @@
 export default {
-    render: async() => {
+    render: async () => {
         return `
         <section class="result">
           <div class="result__preview">
@@ -11,7 +11,7 @@ export default {
             </div>
             <p class="result__nb-good-answer">4 out of 20</p>
           </div>
-          <a  class="result__btn">BACK TO HOME</a>
+          <a href="#" class="result__btn">BACK TO HOME</a>
           <div class="result__oval-form"></div>
           <div class="result__rectangle-form-top"></div>
                 <div class="result__rectangle-form-bottom"></div>
