@@ -9,13 +9,16 @@ export default {
   <div class="title-box-level">
     <h2>Choose your level</h2>
   </div>
-  <input type="button" class="level-box" value="Easy" />
-  <input type="button" class="level-box" value="Medium" />
-  <input type="button" class="level-box" value="Hard" />
-  <input type="button" class="level-box level-box-4" value="Legend" />
+  <div id="level">
+  <input type="button" class="level-box" id="easy" value="Easy" />
+  <input type="button" class="level-box" id="medium" value="Medium" />
+  <input type="button" class="level-box" id="hard" value="Hard" />
+  <input type="button" class="level-box id="legend" level-box-4" value="Legend" />
+  </div>
 </section>
 `
 },
 after_render: async () => {
+  await import("../scripts/level-fetch");
 }
   }
