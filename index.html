@@ -1,150 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.example.com">
-  <!-- Robots -->
-  <meta name="robots" content="noindex, nofollow">
-  <!-- Device -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
-  <meta name="format-detection" content="telephone=no">
-  <!-- Title -->
-  <title>Quizzos</title>
-  <!-- Description -->
-  <meta name="description" content="Quiz">
-  <!-- Social -->
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Quizzos — Home">
-  <meta name="twitter:description" content="Home description.">
-  <meta name="twitter:image" content="#">
-  <!-- Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.example.com">
-  <meta property="og:title" content="Quizzos — Home">
-  <meta property="og:description" content="Home description.">
-  <meta property="og:image" content="#">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <!-- Icon & font -->
-  <meta name="theme-color" content="#fff">
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&f[]=boxing@400&display=swap"
-        rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <!-- Canonical -->
+        <link rel="canonical" href="https://www.example.com" />
+        <!-- Robots -->
+        <meta name="robots" content="noindex, nofollow" />
+        <!-- Device -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5"
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- Title -->
+        <title>Quizzos</title>
+        <!-- Description -->
+        <meta name="description" content="Quiz" />
+        <!-- Social -->
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Quizzos — Home" />
+        <meta name="twitter:description" content="Home description." />
+        <meta name="twitter:image" content="#" />
+        <!-- Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.example.com" />
+        <meta property="og:title" content="Quizzos — Home" />
+        <meta property="og:description" content="Home description." />
+        <meta property="og:image" content="#" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <!-- Icon & font -->
+        <meta name="theme-color" content="#fff" />
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&f[]=boxing@400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-</head>
+    <body>
+        <div id="app"></div>
 
-<body>
-<section class="homepage">
-  <div class="square"></div>
-  <div class="circle"></div>
-  <h1>
-    <img src="assets/quizzos.png" alt="">
-  </h1>
-  <img src="./assets/maskotte.png" alt="le gros cerveau">
-  <div class="get-started">
-    <a href="#"> GET STARTED</a>
-  </div>
-  <img class="arrow" src="assets/fleche.svg" alt="la fleche">
-</section>
-
-<section class="lobby-page">
-    <div class="square"></div>
-    <div class="circle"></div>
-    <ul>
-      <li><a href="">CATEGORY</a></li>
-      <li><a href="#">DIFFICULTY</a></li>
-      <li><a href="#">NUMBERS OF QUESTIONS</a></li>
-      <li>START</li>
-    </ul>
-</section>
-
-<section class="number-question-page">
-   <div class="background-blue-rectangle"></div>
-   <div class="background-pink-rectangle"></div>
-   <div class="title-box">
-   <h2>How many questions do you want ?</h2>
- </div>
- <input type="button" class="questions-box" value="5">
- <input type="button" class="questions-box" value="10">
- <input type="button" class="questions-box" value="15">
- <input type="button" class="questions-box question-box-4" value="20">
-</section>
-
-<section class="level-page">
-  <div class="green-circle-top-left"></div>
-  <div class="green-circle-right"></div>
-  <div class="green-circle-bottom-left"></div>
-
-  <div class="title-box-level">
-    <h2>Choose your level</h2>
-  </div>
-  <input type="button" class="level-box" value="Easy" />
-  <input type="button" class="level-box" value="Medium" />
-  <input type="button" class="level-box" value="Hard" />
-  <input type="button" class="level-box level-box-4" value="Legend" />
-</section>
-
-<section class="category-page">
-  <div class="rect right"></div>
-  <div class="rect left"></div>
-  <div class="separator"></div>
-  <div class="title-categories">What’s your favorite category ?</div>
-  <div class="categories">
-    <span type="text" class="category" value="Linux">Linux</span>
-    <span type="text" class="category" value="DevOps">DevOps</span>
-    <span type="text" class="category" value="Networking">Networking</span>
-    <span type="text" class="category" value="Programming">Programming</span>
-    <span type="text" class="category" value="Cloud">Cloud</span>
-    <span type="text" class="category" value="Docker">Docker</span>
-    <span type="text" class="category" value="Kubernetes">Kubernetes</span>
-    <span type="text" class="category" value="CMS">CMS</span>
-  </div>
-</section>
-
-<section class="question-page">
-   <div class="ellipsis"></div>
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="questions">
-            <span class="number-question">Question 10:</span>
-            <span class="question" id="question"></span>
-        </div>
-        <span class="rest-question">Plus que 5 questions !</span>
-        <div class="answers" id="answers">
-            <span class="answer" id="answer_a"></span>
-            <span class="answer" id="answer_b"></span>
-            <span class="answer" id="answer_c"></span>
-            <span class="answer" id="answer_d"></span>
-        </div>
-</section>
-
-<section class="result">
-  <div class="result__preview">
-    <p>RESULT</p>
-    <div class="result__circle-progress-bar" id="js-progress-bar">
-      <div class="result__circle-progress-bar__value" id="js-value-progress-bar">
-        75%
-      </div>
-    </div>
-    <p class="result__nb-good-answer">4 out of 20</p>
-  </div>
-  <a href="#" class="result__btn">BACK TO HOME</a>
-  <div class="result__oval-form"></div>
-  <div class="result__rectangle-form-top"></div>
-        <div class="result__rectangle-form-bottom"></div>
-        <div class="result__teeth-form-down">
-            <img src="assets/teeth-down.svg" alt="teeth form at the bottom of the page">
-        </div>
-        <div class="result__teeth-form-up">
-            <img src="assets/teeth-up.svg" alt="teeth form at the top of the page">
-        </div>
-  <div class="result__img">
-    <img src="assets/quizzosResult.svg" alt="quizzos mascot representing a brain">
-  </div>
-</section>
-
-<script src="src/main.js" type="module"></script>
-</body>
+        <script src="src/main.js" type="module"></script>
+    </body>
 </html>

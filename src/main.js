@@ -1,3 +1,6 @@
-import './style.scss'
-import '/src/scripts/result.js'
-import '/src/scripts/questions.js';
+import './style.scss';
+import ROUTER from "./router/router.js";
+
+window.addEventListener('load', async () => {
+    await ROUTER();
+});
