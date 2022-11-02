@@ -9,11 +9,11 @@ render: async() => {
   <div class="categories" id="categories">
     <input type="button" class="category" id="Linux" value="Linux">
     <input type="button" class="category" id="DevOps" value="DevOps">
-    <input type="button" class="category" id="Networking" value="Networking">
-    <input type="button" class="category" id="Programming" value="Programming">
-    <input type="button" class="category" id="Cloud" value="Cloud">
+    <input type="button" class="category" id="Code" value="Code">
+    <input type="button" class="category" id="Bash" value="Bash">
+    <input type="button" class="category" id="Uncategorized" value="Uncategorized">
     <input type="button" class="category" id="Docker" value="Docker">
-    <input type="button" class="category" id="Kubernetes" value="Kubernetes">
+    <input type="button" class="category" id="SQL" value="SQL">
     <input type="button" class="category" id="CMS" value="CMS">
   </div>
 </section>

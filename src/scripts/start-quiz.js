@@ -1,9 +1,9 @@
-let start = document.getElementById('start')
+let start = document.getElementById('start');
+let categoryresponse = ""
+let levelresponse = ""
 import {ENDPOINT} from '../../config.ex';
 import {TOKEN} from '../../config';
-import categorievalue from './categories-fetch';
-import levelvalue from './level-fetch';
-import nbquestionsvalue from './nb-questions-fetch';
+
 
 const META = {'X-Api-Key': TOKEN}
 
@@ -12,12 +12,22 @@ let initHeader = { method: 'GET',
                mode: 'cors',
                cache: 'default' };
 
+if (localStorage.getItem('categorie') !== null ) {
+    categoryresponse = "&category=" + localStorage.getItem('categorie')
+    }
+
+if (localStorage.getItem('level') !== null ) {
+        levelresponse = "&difficulty=" + localStorage.getItem('level')
+        }
+
 async function fetchAll() {
-    const RESPONSE = await fetch(ENDPOINT + "&category=" + categorievalue + "&difficulty=" + levelvalue + "&limit=" + nbquestionsvalue, initHeader);
-    console.log(RESPONSE);
-    return await RESPONSE.text();
+    const RESPONSE = await fetch(ENDPOINT + categoryresponse + levelresponse, initHeader);
+    return await RESPONSE.json();
 }
 
 let startquiz = start.addEventListener ('click', async (event) => {
-await fetchAll();
+    console.log(fetchAll())
+    await fetchAll()
+    location.replace('#questions');
 })
+

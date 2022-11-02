@@ -8,7 +8,7 @@ export default {
       <li><a href="#categories">CATEGORY</a></li>
       <li><a href="#level">DIFFICULTY</a></li>
       <li><a href="#nbquestion">NUMBERS OF QUESTIONS</a></li>
-      <li><a href="#questions" id="start">START</a></li>
+      <li id="start">>START</li>
     </ul>
 </section>
 `
