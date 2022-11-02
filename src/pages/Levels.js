@@ -1,7 +1,7 @@
 export default {
-  render: async() => {
-    return `
-<section class="level-page">
+    render: async () => {
+        return `
+<section id='level' class="level-page">
   <div class="green-circle-top-left"></div>
   <div class="green-circle-right"></div>
   <div class="green-circle-bottom-left"></div>
@@ -17,8 +17,8 @@ export default {
   </div>
 </section>
 `
-},
-after_render: async () => {
-  await import("../scripts/level-fetch");
+    },
+    after_render: async () => {
+        await import("../scripts/level-fetch");
+    }
 }
-  }

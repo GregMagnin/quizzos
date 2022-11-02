@@ -1,7 +1,7 @@
 export default {
-  render: async() => {
-    return `
-<section class="number-question-page">
+    render: async () => {
+        return `
+<section id="questions" class="number-question-page">
    <div class="background-blue-rectangle"></div>
    <div class="background-pink-rectangle"></div>
    <div class="title-box">
@@ -15,8 +15,8 @@ export default {
 </div>
  </section>
 `
-  },
-  after_render: async () => {
-    await import("../scripts/nb-questions-fetch");
-  }
+    },
+    after_render: async () => {
+        await import("../scripts/nb-questions-fetch");
+    }
 }
