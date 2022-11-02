@@ -6,19 +6,19 @@ render: async() => {
   <div class="rect left"></div>
   <div class="separator"></div>
   <div class="title-categories">What’s your favorite category ?</div>
-  <div class="categories">
-    <span type="text" class="category" value="Linux">Linux</span>
-    <span type="text" class="category" value="DevOps">DevOps</span>
-    <span type="text" class="category" value="Networking">Networking</span>
-    <span type="text" class="category" value="Programming">Programming</span>
-    <span type="text" class="category" value="Cloud">Cloud</span>
-    <span type="text" class="category" value="Docker">Docker</span>
-    <span type="text" class="category" value="Kubernetes">Kubernetes</span>
-    <span type="text" class="category" value="CMS">CMS</span>
+  <div class="categories" id="categories">
+    <input type="button" class="category" id="Linux" value="Linux">
+    <input type="button" class="category" id="DevOps" value="DevOps">
+    <input type="button" class="category" id="Code" value="Code">
+    <input type="button" class="category" id="Bash" value="Bash">
+    <input type="button" class="category" id="Uncategorized" value="Uncategorized">
+    <input type="button" class="category" id="Docker" value="Docker">
+    <input type="button" class="category" id="SQL" value="SQL">
+    <input type="button" class="category" id="CMS" value="CMS">
   </div>
 </section>
 `
 },
 after_render: async () => {
-}
-}
+  await import("../scripts/categories-fetch");
+}}
