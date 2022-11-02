@@ -88,7 +88,7 @@
 }
 
 .category {
-  text-align: center;
+  @extend %flex-center;
   width: 39.74vw;
   height: 10.31vh;
   background-color: #fff;
