@@ -7,13 +7,16 @@ export default {
    <div class="title-box">
    <h2>How many questions do you want ?</h2>
  </div>
- <input type="button" class="questions-box" value="5">
- <input type="button" class="questions-box" value="10">
- <input type="button" class="questions-box" value="15">
- <input type="button" class="questions-box question-box-4" value="20">
-</section>
+ <div id="nbquestion">
+ <input type="button" class="questions-box" id="5" value="5">
+ <input type="button" class="questions-box" id="10" value="10">
+ <input type="button" class="questions-box" id="15" value="15">
+ <input type="button" class="questions-box id="20" question-box-4" value="20">
+</div>
+ </section>
 `
   },
   after_render: async () => {
+    await import("../scripts/nb-questions-fetch");
   }
 }
