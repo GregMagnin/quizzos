@@ -1,8 +1,8 @@
 let start = document.getElementById('start');
 let categoryresponse = ""
 let levelresponse = ""
-let nbquestions = "20"
-import {ENDPOINT} from '../../config.ex';
+let nbquestions = localStorage.setItem('questions', "20");
+import {ENDPOINT} from '../../config';
 import {TOKEN} from '../../config';
 
 
@@ -30,10 +30,10 @@ async function fetchAll() {
     return await RESPONSE.json();
 }
 
-let startquiz = start.addEventListener ('click', async (event) => {
+start.addEventListener ('click', async (event) => {
     await fetchAll();
     localStorage.setItem('number_good_answers', "0");
     localStorage.setItem('iteration_question', "1");
-    location.replace('#questions');
+    document.location.href = '#questions';
 })
 

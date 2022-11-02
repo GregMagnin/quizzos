@@ -18,6 +18,8 @@ let answer_d = document.getElementById('answer_d');
 let number_question = parseInt(localStorage.getItem('questions'));
 let iteration_question = parseInt(localStorage.getItem('iteration_question'));
 let number_good_answers = parseInt(localStorage.getItem('number_good_answers'));
+let timer;
+let timerElement = document.getElementById('timer')
 
     async function getDataAsync() {
         let response = await fetch(ENDPOINT, initHeader);
@@ -25,6 +27,18 @@ let number_good_answers = parseInt(localStorage.getItem('number_good_answers'));
     }
 
     let response = await getDataAsync();
+
+const TIMER = (function timing(){
+        let sec = 30;
+        timer = setInterval(() => {
+           sec = sec < 10 ? "0" + sec : sec;
+            timerElement.innerHTML = '00:'+sec;
+            sec = sec <= 0 ? 0: sec - 1
+        }, 1000)
+    })()
+
+
+    
 
 if (response[0]['multiple_correct_answers'] === 'false') {
 
