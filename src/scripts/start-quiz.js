@@ -30,10 +30,10 @@ async function fetchAll() {
     return await RESPONSE.json();
 }
 
-let startquiz = start.addEventListener ('click', async (event) => {
+start.addEventListener ('click', async (event) => {
     await fetchAll();
     localStorage.setItem('number_good_answers', "0");
     localStorage.setItem('iteration_question', "1");
-    location.replace('#questions');
+    document.location.href = '#questions';
 })
 
