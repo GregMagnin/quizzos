@@ -1,6 +1,3 @@
-export default {
-    render: async () => {
-        return `
 <section class="homepage" id="homepage">
 <div class="square"></div>
 <div class="circle"></div>
@@ -13,15 +10,23 @@ export default {
 </div>
 <img class="arrow" src="assets/fleche.svg" alt="la fleche">
 </section>
+<div id="lobby"></div>
 `;
     },
     after_render: async () => {
+           let start = document.getElementById("start");
+        let rotateFall = await import('../../src/animations/rotateFall.js');
+
+        start.addEventListener('click', async () => {
+            await (rotateFall.default)();
+        });
         let jaw = await import("../components/jaw");
         let homepage_section = document.getElementById("homepage");
         homepage_section.innerHTML += jaw.default;
         let openingAnimationURL = "?OpeningAnimation";
         let URL = document.location.search;
         await import("../animations/openingPageAnimation");
+
 
         if (URL !== openingAnimationURL) {
             const UP = document.querySelector(".teeth-form-up");
@@ -33,6 +38,7 @@ export default {
             DOWN.style.display = "none";
             UPSQUARE.style.display = "none";
             DOWNSQUARE.style.display = "none";
-        }
+        } 
     },
 };
+>>>>>>> src/pages/Home.js

@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+}
+
+.pt-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.pt-page-current, .pt-page {
+    visibility: visible;
+    z-index: 1;
+}
+
+
+.pt-page-ontop {
+    z-index: 999;
+}
+
+
+.pt-page-scaleDown {
+    -webkit-animation: scaleDown 0;
+    animation: scaleDown 0;
+}
+
+@-webkit-keyframes scaleDown {
+    from {
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scale(.8);
+    }
+}
+
+.pt-page-scaleUp {
+    -webkit-animation: scaleUp 0;
+    animation: scaleUp;
+}
+
+@-webkit-keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.pt-page-moveFromTop {
+    -webkit-animation: moveFromTop .6s ease both;
+    animation: moveFromTop .6s ease both;
+}
+
+@-webkit-keyframes moveFromTop {
+    from {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+.pt-page-outFromBottom {
+    -webkit-animation: outFromBottom .6s ease both;
+    animation: outFromBottom .6s ease both;
+}
+
+@-webkit-keyframes outFromBottom {
+    to {
+        transform: translateY(100%);
+    }
+    from {
+        transform: translateY(0);
+    }
+}

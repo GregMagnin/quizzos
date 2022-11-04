@@ -1,0 +1,47 @@
+html, body { height: 100%; }
+
+.pt-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.pt-page-current, .pt-page {
+  visibility: visible;
+  z-index: 1;
+}
+
+
+.pt-page-ontop {
+  z-index: 999;
+}
+
+
+.pt-page-scaleDown {
+  -webkit-animation: scaleDown 1s ease both;
+  animation: scaleDown 1s ease both;
+}
+
+@-webkit-keyframes scaleDown {
+  from { }
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+
+
+.pt-page-moveFromBottom {
+  -webkit-animation: moveFromBottom 0.5s ease both;
+  animation: moveFromBottom 0.5s ease both;
+}
+
+@-webkit-keyframes moveFromBottom {
+  from { -webkit-transform: translateY(100%); }
+}

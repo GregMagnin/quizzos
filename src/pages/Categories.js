@@ -1,6 +1,6 @@
 export default {
-render: async() => {
-  return `
+    render: async () => {
+        return `
 <section class="category-page">
   <div class="rect right"></div>
   <div class="rect left"></div>
@@ -18,7 +18,19 @@ render: async() => {
   </div>
 </section>
 `
-},
-after_render: async () => {
-  await import("../scripts/categories-fetch");
-}}
+    },
+    after_render: async () => {
+        await import("../scripts/categories-fetch");
+
+        let categories = document.getElementsByClassName("category");
+        let scaleDownFromBottom = await import('../../src/animations/scaleDownFromBottom.js');
+        Array.from(categories).forEach((categorie) => {
+            categorie.addEventListener('click', async () => {
+                console.log("ok")
+                await (scaleDownFromBottom.default)('categories');
+            });
+        })
+
+    }
+}
+

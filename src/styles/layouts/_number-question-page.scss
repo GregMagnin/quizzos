@@ -1,71 +1,73 @@
 .number-question-page {
-  width: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -99;
 }
 
 .title-box {
-  @extend %title-box;
-  margin-top: 50px;
-  font-size: clamp(30px, 38px, 38px);
+    @extend %title-box;
+    margin-top: 50px;
+    font-size: clamp(30px, 38px, 38px);
 }
 
 .questions-box {
-  @extend %number-box;
+    @extend %number-box;
 }
 
 .question-box-4 {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .background-blue-rectangle {
-  width: 150vw;
-  height: 150vh;
-  background-color: #9EE7F8;
-  position: absolute;
-  z-index: -5;
-  transform: rotate(165deg);
-  border: 5px black solid;
-  left: -350px;
-  top: -100px;
+    width: 150vw;
+    height: 150vh;
+    background-color: #9EE7F8;
+    position: absolute;
+    z-index: -5;
+    transform: rotate(165deg);
+    border: 5px black solid;
+    left: -350px;
+    top: -100px;
 }
 
 .background-blue-rectangle::before {
-  content: '';
-  width: 25vw;
-  background-color: #4ED7F4;
-  height: 150vh;
-  position: absolute;
-  z-index: -5;
+    content: '';
+    width: 25vw;
+    background-color: #4ED7F4;
+    height: 150vh;
+    position: absolute;
+    z-index: -5;
 }
 
 .background-pink-rectangle {
-  width: 150vw;
-  height: 150vh;
-  background-color: #E44C42;
-  position: absolute;
-  z-index: -5;
-  transform: rotate(-15deg);
-  right: -400px;
-  top: -200px;
-  border: 5px solid black;
+    width: 150vw;
+    height: 150vh;
+    background-color: #E44C42;
+    position: absolute;
+    z-index: -5;
+    transform: rotate(-15deg);
+    right: -400px;
+    top: -200px;
+    border: 5px solid black;
 }
 
 .background-pink-rectangle::after {
-  content: '';
-  width: 150vw;
-  height: 150vh;
-  background-color: #E3766F;
-  position: absolute;
-  z-index: 5;
-  right: -20%;
+    content: '';
+    width: 150vw;
+    height: 150vh;
+    background-color: #E3766F;
+    position: absolute;
+    z-index: 5;
+    right: -20%;
 }
 
 .questions-box {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .questions-box:active {
-  top: 10px;
-  left: 10px;
-  box-shadow: 0px 0px black;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0px 0px black;
 }
