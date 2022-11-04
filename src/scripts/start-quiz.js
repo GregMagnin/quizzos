@@ -5,9 +5,10 @@ if (localStorage.getItem('questions') !== null) {
     nbquestions = localStorage.getItem('questions')
 }
 
-let startquiz = start.addEventListener('click', async (event) => {
-
+start.addEventListener ('click', async (event) => {
+    await fetchAll();
     localStorage.setItem('number_good_answers', "0");
     localStorage.setItem('iteration_question', "1");
+    document.location.href = '#questions';
     document.location.href = '#questions';
 })
