@@ -6,9 +6,7 @@ if (localStorage.getItem('questions') !== null) {
 }
 
 start.addEventListener ('click', async (event) => {
-    await fetchAll();
     localStorage.setItem('number_good_answers', "0");
     localStorage.setItem('iteration_question', "1");
-    document.location.href = '#questions';
     document.location.href = '#questions';
 })
