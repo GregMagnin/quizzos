@@ -15,7 +15,7 @@ TL.to(DOWN, { bottom: "0%", ease: "power2.out", duration: 0.5 }, "<");
 TL.to(UPSQUARE, { top: "-5%", ease: "power2.out", duration: 0.5 });
 await TL.to(DOWNSQUARE, { bottom: "6%", ease: "power2.out", duration: 0.5}, "<");
 
-    localStorage.clear(); 
+    localStorage.clear();
     location.replace("?OpeningAnimation#")
 })
 
