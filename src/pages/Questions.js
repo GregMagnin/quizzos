@@ -5,11 +5,12 @@ export default {
     <div class="ellipsis"></div>
     <div class="rect1"></div>
     <div class="rect2"></div>
+    <div class="timer" id="timer"></div>
     <div class="questions">
-        <span class="number-question">Question 10:</span>
+        <span class="number-question">Question <span id="iteration_question"></span>:</span>
         <span class="question" id="question"></span>
     </div>
-    <span class="rest-question">Plus que 5 questions !</span>
+    <span class="rest-question"><span id="remaining_questions"></span></span>
     <div class="answers" id="answers">
         <span class="answer" id="answer_a"></span>
         <span class="answer" id="answer_b"></span>
@@ -20,6 +21,7 @@ export default {
 `
     },
     after_render: async () => {
-        await import('../scripts/questions');
+        let questions = await import('../scripts/questions');
+        await questions.default();
     }
 }
