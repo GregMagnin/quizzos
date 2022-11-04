@@ -54,21 +54,6 @@ export default async () => {
         }, 1000)
     })()
 
-const TIMER = (function timing(){
-        let sec = 30;
-        timer = setInterval(() => {
-           sec = sec < 10 ? "0" + sec : sec;
-            timerElement.innerHTML = '00:'+sec;
-            sec = sec <= 0 ? 0: sec - 1
-            if (sec === 0) {
-                iteration_question++;
-                localStorage.setItem('iteration_question', (iteration_question.toString()));
-                setTimeout(document.location.reload(true), 2000);
-            }
-        }, 1000)
-    })()
-
-
     
 
 if (response[0]['multiple_correct_answers'] === 'false') {

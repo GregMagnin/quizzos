@@ -8,6 +8,7 @@ export default async () => {
     location.hash = "#lobby"
 }
 
+
 let delay = (ms) => {
     return new Promise(resolve => {
         setTimeout(() => {

@@ -1,4 +1,7 @@
-<section class="homepage" id="homepage">
+export default {
+  render: async () => {
+      return `
+      <section class="homepage" id="homepage">
 <div class="square"></div>
 <div class="circle"></div>
 <h1>
@@ -6,20 +9,16 @@
 </h1>
 <img src="./assets/maskotte.png" alt="le gros cerveau">
 <div class="get-started">
-  <a href="#lobby" id="started"> GET STARTED</a>
+  <a href="#" id="started"> GET STARTED</a>
 </div>
 <img class="arrow" src="assets/fleche.svg" alt="la fleche">
 </section>
-<div id="lobby"></div>
-`;
-    },
-    after_render: async () => {
-           let start = document.getElementById("start");
-        let rotateFall = await import('../../src/animations/rotateFall.js');
+<div id="lobby"></div> `
+;
 
-        start.addEventListener('click', async () => {
-            await (rotateFall.default)();
-        });
+},
+after_render: async () => {
+
         let jaw = await import("../components/jaw");
         let homepage_section = document.getElementById("homepage");
         homepage_section.innerHTML += jaw.default;
@@ -39,6 +38,13 @@
             UPSQUARE.style.display = "none";
             DOWNSQUARE.style.display = "none";
         } 
-    },
-};
->>>>>>> src/pages/Home.js
+
+        
+           let start = document.getElementById("started");
+        let rotateFall = await import('../../src/animations/rotateFall.js');
+        start.addEventListener('click', async (e) => {
+          console.log(e);
+            await (rotateFall.default)();
+        });
+    }
+}
