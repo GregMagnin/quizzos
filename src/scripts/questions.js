@@ -55,7 +55,7 @@ if (response[0]['multiple_correct_answers'] === 'false') {
         if (remaining_questions > 1){
             remaining_quest.innerText = `${remaining_questions.toString()} questions left !`;
         } else if (remaining_questions === 1){
-            remaining_quest.innerText = `Plus que ${remaining_questions.toString()} question left !`;
+            remaining_quest.innerText = `${remaining_questions.toString()} question left !`;
         } else {
             remaining_quest.innerText = 'Last question !'
         }
