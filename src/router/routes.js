@@ -10,7 +10,7 @@ export const routes = {
     '/': Home,
     'home': Home,
     'lobby': Lobby,
-    'level': Level,
+    'levels': Level,
     'nbquestion': NbQuestion,
     'categories': Categories,
     'questions': Questions,

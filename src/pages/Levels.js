@@ -13,12 +13,21 @@ export default {
   <input type="button" class="level-box" id="easy" value="Easy" />
   <input type="button" class="level-box" id="medium" value="Medium" />
   <input type="button" class="level-box" id="hard" value="Hard" />
-  <input type="button" class="level-box id="legend" level-box-4" value="Legend" />
+  <input type="button" class="level-box" id="legend" value="Legend" />
   </div>
 </section>
+
 `
     },
     after_render: async () => {
         await import("../scripts/level-fetch");
+
+        let questions = document.getElementsByClassName("level-box");
+        let scaleDownFromBottom = await import('../../src/animations/scaleDownFromBottom.js');
+        Array.from(questions).forEach((question) => {
+            question.addEventListener('click', async () => {
+                await (scaleDownFromBottom.default)('levels');
+            });
+        })
     }
 }
