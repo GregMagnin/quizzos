@@ -36,5 +36,7 @@ export default {
         questions.addEventListener('click', async () => {
             await (scaleDownFromTop.default)('nbQuestions');
         });
+
+
     }
 }
