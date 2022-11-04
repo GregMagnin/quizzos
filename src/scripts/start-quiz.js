@@ -1,7 +1,7 @@
 let start = document.getElementById('start');
 let categoryresponse = ""
 let levelresponse = ""
-let nbquestions = "20"
+let nbquestions = localStorage.setItem('questions', '20');
 import {ENDPOINT} from '../../config';
 import {TOKEN} from '../../config';
 
