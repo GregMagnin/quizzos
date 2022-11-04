@@ -15,11 +15,13 @@ let answer_a = document.getElementById('answer_a');
 let answer_b= document.getElementById('answer_b');
 let answer_c = document.getElementById('answer_c');
 let answer_d = document.getElementById('answer_d');
+let remaining_quest = document.getElementById('remaining_questions');
 let number_question = parseInt(localStorage.getItem('questions'));
 let iteration_question = parseInt(localStorage.getItem('iteration_question'));
 let number_good_answers = parseInt(localStorage.getItem('number_good_answers'));
 let timer;
 let timerElement = document.getElementById('timer')
+let remaining_questions = number_question - iteration_question;
 
     async function getDataAsync() {
         let response = await fetch(ENDPOINT, initHeader);
@@ -34,6 +36,11 @@ const TIMER = (function timing(){
            sec = sec < 10 ? "0" + sec : sec;
             timerElement.innerHTML = '00:'+sec;
             sec = sec <= 0 ? 0: sec - 1
+            if (sec === 0) {
+                iteration_question++;
+                localStorage.setItem('iteration_question', (iteration_question.toString()));
+                setTimeout(document.location.reload(true), 2000);
+            }
         }, 1000)
     })()
 
@@ -44,6 +51,13 @@ if (response[0]['multiple_correct_answers'] === 'false') {
 
     iteration.innerText = localStorage.getItem('iteration_question');
     quest.innerText = response[0]['question'];
+    if (remaining_questions > 1){
+        remaining_quest.innerText = `Plus que ${remaining_questions.toString()} questions !`;
+    } else if (remaining_questions === 1){
+        remaining_quest.innerText = `Plus que ${remaining_questions.toString()} question !`;
+    } else {
+        remaining_quest.innerText = 'Dernière question !'
+    }
     answer_a.innerText = response[0]['answers']['answer_a'];
     answer_b.innerText = response[0]['answers']['answer_b'];
     answer_c.innerText = response[0]['answers']['answer_c'];
@@ -65,7 +79,6 @@ if (response[0]['multiple_correct_answers'] === 'false') {
         if (goodAnswerElement === e.target) {
             number_good_answers++;
             localStorage.setItem("number_good_answers", (number_good_answers.toString()));
-            console.log("bonnes réponses: " + localStorage.getItem("number_good_answers"));
         }
         if (number_question > iteration_question) {
             iteration_question++;

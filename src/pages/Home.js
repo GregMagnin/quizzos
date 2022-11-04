@@ -20,11 +20,10 @@ export default {
         let homepage_section = document.getElementById("homepage");
         homepage_section.innerHTML += jaw.default;
         let openingAnimationURL = "?OpeningAnimation";
-        let test = document.location.search;
-        console.log(test);
-        await import("../scripts/openingPageAnimation");
+        let URL = document.location.search;
+        await import("../animations/openingPageAnimation");
 
-        if (test !== openingAnimationURL) {
+        if (URL !== openingAnimationURL) {
             const UP = document.querySelector(".teeth-form-up");
             const UPSQUARE = document.querySelector(".rectangle-form-top");
             const DOWN = document.querySelector(".teeth-form-down");
