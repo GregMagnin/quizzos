@@ -20,6 +20,8 @@ export default async () => {
     let number_question = parseInt(localStorage.getItem('questions'));
     let iteration_question = parseInt(localStorage.getItem('iteration_question'));
     let number_good_answers = parseInt(localStorage.getItem('number_good_answers'));
+    let timer;
+    let timerElement = document.getElementById('timer')
     let remaining_questions = number_question - iteration_question;
     let categoryresponse = ""
     let levelresponse = ""
@@ -38,6 +40,19 @@ export default async () => {
     }
 
     let response = await getDataAsync();
+    const TIMER = (function timing(){
+        let sec = 30;
+        timer = setInterval(() => {
+           sec = sec < 10 ? "0" + sec : sec;
+            timerElement.innerHTML = '00:'+sec;
+            sec = sec <= 0 ? 0: sec - 1
+            if (sec === 0) {
+                iteration_question++;
+                localStorage.setItem('iteration_question', (iteration_question.toString()));
+                setTimeout(document.location.reload(true), 2000);
+            }
+        }, 1000)
+    })()
 
     if (response[0]['multiple_correct_answers'] === 'false') {
 
@@ -46,7 +61,7 @@ export default async () => {
         if (remaining_questions > 1){
             remaining_quest.innerText = `${remaining_questions.toString()} questions left !`;
         } else if (remaining_questions === 1){
-            remaining_quest.innerText = `Plus que ${remaining_questions.toString()} question left !`;
+            remaining_quest.innerText = `${remaining_questions.toString()} question left !`;
         } else {
             remaining_quest.innerText = 'Last question !'
         }
