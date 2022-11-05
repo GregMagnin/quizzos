@@ -1,8 +1,9 @@
 let start = document.getElementById('start');
-let nbquestions = localStorage.setItem('questions', '20');
+let nbquestions = localStorage.getItem('questions');
 
-if (localStorage.getItem('questions') !== null) {
-    nbquestions = localStorage.getItem('questions')
+
+if (localStorage.getItem('questions') == null) {
+    nbquestions = localStorage.setItem('questions','20')
 }
 
 start.addEventListener ('click', async (event) => {
