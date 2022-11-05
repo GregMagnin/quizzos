@@ -10,4 +10,3 @@ start.addEventListener ('click', async (event) => {
     localStorage.setItem('iteration_question', "1");
     document.location.href = '#questions';
 })
- 
