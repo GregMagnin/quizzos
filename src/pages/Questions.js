@@ -10,18 +10,15 @@ export default {
         <span class="number-question">Question <span id="iteration_question"></span>:</span>
         <span class="question" id="question"></span>
     </div>
-    <span class="rest-question"><span id="remaining_questions"></span></span>
-    <div class="answers" id="answers">
-        <span class="answer" id="answer_a"></span>
-        <span class="answer" id="answer_b"></span>
-        <span class="answer" id="answer_c"></span>
-        <span class="answer" id="answer_d"></span>
-    </div>
+    <span id="remaining_questions"></span>
+    <div class="answers" id="answers"></div>
+    <div class="loader"></div>
 </section>
 `
     },
     after_render: async () => {
         let questions = await import('../scripts/questions');
         await questions.default();
+        await import("../animations/loader");
     }
 }
