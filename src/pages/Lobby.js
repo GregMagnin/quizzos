@@ -5,9 +5,9 @@ export default {
     <div class="square"></div>
     <div class="circle"></div>
     <ul>
-      <li><a id="category">CATEGORY</a></li>
-      <li><a id="difficulty">DIFFICULTY</a></li>
-      <li><a id="numbers-of-questions">NUMBERS OF QUESTIONS</a></li>
+      <li id="category"><a>CATEGORY</a></li>
+      <li id="difficulty"><a>DIFFICULTY</a></li>
+      <li id="numbers-of-questions"><a>NUMBERS OF QUESTIONS</a></li>
       <li id="start-quiz">START</li>
     </ul>
 </section>
