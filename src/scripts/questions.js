@@ -105,7 +105,9 @@ if (response[0]['multiple_correct_answers'] === 'false') {
                     document.location.reload();
                 }, 1000);
             } else {
-                document.location.href = '#result';
+                setTimeout(() => {
+                    document.location.href = '#result';
+                }, 1000);
             }
         })
     }
