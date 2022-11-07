@@ -12,11 +12,13 @@ export default {
     </div>
     <span id="remaining_questions"></span>
     <div class="answers" id="answers"></div>
+    <div class="loader"></div>
 </section>
 `
     },
     after_render: async () => {
         let questions = await import('../scripts/questions');
         await questions.default();
+        await import("../animations/loader");
     }
 }
