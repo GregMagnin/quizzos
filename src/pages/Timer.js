@@ -20,7 +20,6 @@ export default {
     },
     after_render: async () => {
         await import('../animations/timer.js');
-        await import("../scripts/start-quiz");
-
+        await import('../scripts/start-quiz.js');
     }
 }
