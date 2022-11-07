@@ -5,6 +5,7 @@ import NbQuestion from "../pages/NbQuestions.js";
 import Categories from "../pages/Categories.js";
 import Questions from "../pages/Questions.js";
 import Result from "../pages/Result.js";
+import Timer from "../pages/Timer.js";
 
 export const routes = {
     '/': Home,
@@ -15,4 +16,5 @@ export const routes = {
     'categories': Categories,
     'questions': Questions,
     'result': Result,
+    'timer': Timer,
 };

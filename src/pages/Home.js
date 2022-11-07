@@ -1,6 +1,6 @@
 export default {
-  render: async () => {
-      return `
+    render: async () => {
+        return `
       <section class="homepage" id="homepage">
 <div class="square"></div>
 <div class="circle"></div>
@@ -14,10 +14,10 @@ export default {
 <img class="arrow" src="assets/fleche.svg" alt="la fleche">
 </section>
 <div id="lobby"></div> `
-;
+            ;
 
-},
-after_render: async () => {
+    },
+    after_render: async () => {
 
         let jaw = await import("../components/jaw");
         let homepage_section = document.getElementById("homepage");
@@ -37,10 +37,10 @@ after_render: async () => {
             DOWN.style.display = "none";
             UPSQUARE.style.display = "none";
             DOWNSQUARE.style.display = "none";
-        } 
+        }
 
-        
-           let start = document.getElementById("started");
+
+        let start = document.getElementById("started");
         let rotateFall = await import('../../src/animations/rotateFall.js');
         start.addEventListener('click', async (e) => {
             await (rotateFall.default)();
