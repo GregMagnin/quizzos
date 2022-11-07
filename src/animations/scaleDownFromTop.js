@@ -1,6 +1,5 @@
 export default async (el) => {
     let lobbypage = document.getElementById("lobbypage");
-    console.log('ok')
     const element = document.getElementById(el);
     let component = (await import(`../pages/${capitalizeFirstLetter(el)}.js`)).default;
     element.innerHTML = await component.render()
