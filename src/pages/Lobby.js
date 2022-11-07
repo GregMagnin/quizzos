@@ -8,7 +8,7 @@ export default {
       <li><a id="category">CATEGORY</a></li>
       <li><a id="difficulty">DIFFICULTY</a></li>
       <li><a id="numbers-of-questions">NUMBERS OF QUESTIONS</a></li>
-      <li id="start-quizz">START</li>
+      <li id="start-quiz">START</li>
     </ul>
 </section>
 <div id="categories"></div>
@@ -20,6 +20,7 @@ export default {
 `
     },
     after_render: async () => {
+
 
         let category = document.getElementById("category");
         let difficulty = document.getElementById("difficulty");
@@ -38,13 +39,11 @@ export default {
             await (scaleDownFromTop.default)('nbQuestions');
         });
 
-        let start = document.getElementById("start-quizz");
+        let start = document.getElementById("start-quiz");
         let rotateFall = await import('../../src/animations/rotateFallLeft.js');
         start.addEventListener('click', async (e) => {
             await (rotateFall.default)();
         });
-
-        // await import("../scripts/start-quiz");
 
     }
 }

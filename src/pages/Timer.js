@@ -1,7 +1,7 @@
 export default {
     render: async () => {
         return `
-      <section class="timer" id="timer">
+      <section class="timer-page" id="timer">
     <div class="square-top"></div>
     <div class="square-bottom"></div>
 
@@ -20,5 +20,7 @@ export default {
     },
     after_render: async () => {
         await import('../animations/timer.js');
+        await import("../scripts/start-quiz");
+
     }
 }
