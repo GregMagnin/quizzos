@@ -1,0 +1,17 @@
+.loader {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 15px solid #e0d3d5;
+    border-bottom: 15px solid #ED8681;
+    position: absolute;
+    z-index: 99;
+    animation: rotate 1s infinite linear;
+    display: none;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

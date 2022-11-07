@@ -1,5 +1,6 @@
 import { TOKEN } from "../../config";
 import { ENDPOINT } from "../../config";
+import { loading } from "../animations/loader";
 
 export default async () => {
     const META = {'X-Api-Key': TOKEN}
@@ -21,6 +22,7 @@ export default async () => {
     let remaining_questions = number_question - iteration_question;
     let categoryresponse = "";
     let levelresponse = "";
+    loading.style.display = "flex";
 
     if (localStorage.getItem('categorie') !== null ) {
         categoryresponse = "&category=" + localStorage.getItem('categorie')
@@ -37,7 +39,7 @@ export default async () => {
     }
     
     let response = await getDataAsync();
-    
+    loading.style.display = "none";
     const TIMER = (async function timing(){
         let sec = 30;
         timer = setInterval(() => {
