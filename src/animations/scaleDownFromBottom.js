@@ -1,5 +1,4 @@
 export default async (el) => {
-    console.log('ok')
     const lobbyElement = document.getElementById('lobbypage');
     const element = document.getElementById(el);
 

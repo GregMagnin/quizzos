@@ -1,0 +1,33 @@
+/* rotate fall */
+
+.pt-page-rotateFall-left {
+    transform-origin: 0% 0%;
+    -webkit-animation: rotateFallLeft 1s both ease-in;
+    animation: rotateFallLeft 1s both ease-in;
+}
+
+@keyframes rotateFallLeft {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+    20% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        -webkit-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+    }
+    60% {
+        -webkit-transform: rotateZ(-11deg);
+        transform: rotateZ(-11deg);
+    }
+    100% {
+        -webkit-transform: translateY(100%) rotateZ(0deg);
+        transform: translateY(100%) rotateZ(0deg);
+    }
+}
+

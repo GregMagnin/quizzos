@@ -1,6 +1,6 @@
 export default {
-    render: async() => {
-      return `
+    render: async () => {
+        return `
 <section class="question-page">
     <div class="ellipsis"></div>
     <div class="rect1"></div>
