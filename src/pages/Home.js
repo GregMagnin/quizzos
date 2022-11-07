@@ -43,7 +43,6 @@ after_render: async () => {
            let start = document.getElementById("started");
         let rotateFall = await import('../../src/animations/rotateFall.js');
         start.addEventListener('click', async (e) => {
-          console.log(e);
             await (rotateFall.default)();
         });
     }

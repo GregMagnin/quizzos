@@ -34,17 +34,19 @@ export default async () => {
         levelresponse = "&difficulty=" + localStorage.getItem('level')
     }
 
+    
     async function getDataAsync() {
         let response = await fetch(ENDPOINT + categoryresponse + levelresponse, initHeader);
         return await response.json();
     }
-
+    
     let response = await getDataAsync();
-    const TIMER = (function timing(){
+    
+    const TIMER = (async function timing(){
         let sec = 30;
         timer = setInterval(() => {
            sec = sec < 10 ? "0" + sec : sec;
-            timerElement.innerHTML = '00:'+sec;
+            timerElement.innerHTML = sec;
             sec = sec <= 0 ? 0: sec - 1
             if (sec === 0) {
                 iteration_question++;
