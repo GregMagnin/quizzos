@@ -1,7 +1,7 @@
 .level-page {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 100vw;
   background-color: #FFFF00;
   height: 100vh;
 }
@@ -87,6 +87,8 @@
   margin-top: 7vh;
   z-index: 15;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .level-box {

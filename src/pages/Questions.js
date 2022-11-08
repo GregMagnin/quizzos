@@ -19,6 +19,5 @@ export default {
     after_render: async () => {
         let questions = await import('../scripts/questions');
         await questions.default();
-        await import("../animations/loader");
     }
 }

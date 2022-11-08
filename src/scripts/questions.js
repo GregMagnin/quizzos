@@ -90,9 +90,9 @@ if (response[0]['multiple_correct_answers'] === 'false') {
             let goodAnswerElement = document.getElementById(good_answer);
             let answers_red = document.querySelectorAll('.answer');
             for (let answer_red of answers_red) {
-            answer_red.style.backgroundColor = "rgb(241,61,61)";
+            answer_red.style.backgroundColor = "rgb(255,39,39)";
             }
-            goodAnswerElement.style.backgroundColor = "rgb(4, 111, 120)";
+            goodAnswerElement.style.backgroundColor = "rgb(0, 201, 68)";
 
             if (goodAnswerElement === e.target) {
                 number_good_answers++;
