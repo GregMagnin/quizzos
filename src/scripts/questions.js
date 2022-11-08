@@ -39,8 +39,7 @@ export default async () => {
             return await response.json();
         }
         let ourApi = await getOurApi()
-        console.log(ourApi[randomNumber]);
-        for (let question in ourApi) {
+        
         
         loading.style.display = "none";
     const TIMER = (async function timing(){
@@ -117,7 +116,7 @@ export default async () => {
             document.location.reload();
         }
         
-    }} else {
+    } else {
     
     async function getDataAsync() {
         let response = await fetch(ENDPOINT + categoryresponse + levelresponse, initHeader);

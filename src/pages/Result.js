@@ -13,7 +13,7 @@ export default {
           </div>
           <a class="result__btn">BACK TO HOME</a>
           <div class="result__oval-form-middle"></div>
-          
+
           <div class="result__img">
             <img src="assets/quizzosResult.svg" alt="quizzos mascot representing a brain">
           </div>
@@ -21,11 +21,11 @@ export default {
         `;
     },
     after_render: async () => {
-      
-      let jaw = await import ("../components/jaw");
-      let result_section = document.getElementById("js-result-section");
-      result_section.innerHTML += jaw.default
-      await import("../animations/progressBar");
-      await import("../animations/closingPageAnimation");
+
+        let jaw = await import ("../components/jaw");
+        let result_section = document.getElementById("js-result-section");
+        result_section.innerHTML += jaw.default
+        await import("../animations/progressBar");
+        await import("../animations/closingPageAnimation");
     },
 };
