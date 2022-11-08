@@ -20,21 +20,19 @@ export default {
 `
     },
     after_render: async () => {
-
-
         let category = document.getElementById("category");
         let difficulty = document.getElementById("difficulty");
         let questions = document.getElementById("numbers-of-questions");
         let scaleDownFromTop = await import('../../src/animations/scaleDownFromTop.js');
-
+        
         category.addEventListener('click', async () => {
             await (scaleDownFromTop.default)('categories');
         });
-
+        
         difficulty.addEventListener('click', async () => {
             await (scaleDownFromTop.default)('levels');
         });
-
+        
         questions.addEventListener('click', async () => {
             await (scaleDownFromTop.default)('nbQuestions');
         });
@@ -43,6 +41,7 @@ export default {
         let rotateFall = await import('../../src/animations/rotateFallLeft.js');
         start.addEventListener('click', async (e) => {
             await (rotateFall.default)();
+            await import('../animations/timer.js');
         });
 
     }

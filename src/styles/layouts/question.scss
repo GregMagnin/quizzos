@@ -1,5 +1,5 @@
 .question-page {
-    background-color: #29FF58;
+    background-color: #AD00FF;
     z-index: 5;
     @extend %flex-center;
     flex-direction: column;
@@ -14,7 +14,7 @@
 .ellipsis {
     width: 91.03vw;
     height: 59vh;
-    background-color: #D2FFDC;
+    background-color: #D884FF;
     border-radius: 0% 21% 100% 0% / 0% 42% 58% 55%;
     z-index: -1;
     position: absolute;
@@ -26,7 +26,7 @@
     width: 162.84vw;
     height: 150.06vh;
     transform: rotate(-17.11deg);
-    background-color: #00ACEE;
+    background-color: #FF6B00;
     position: absolute;
     border-top: 5px solid #000;
     top: 75vh;
@@ -40,7 +40,7 @@
     height: 36.06vh;
     transform: rotate(-17.11deg);
     border-radius: 25px;
-    background-color: #AEE5FA;
+    background-color: #FF984E;
     top: 85vh;
     left: 50vw;
     z-index: -1;
