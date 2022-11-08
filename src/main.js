@@ -1,4 +1,4 @@
-import './style.scss';
+import './styles/style.scss';
 import ROUTER from "./router/router.js";
 
 window.addEventListener('load', async () => {
