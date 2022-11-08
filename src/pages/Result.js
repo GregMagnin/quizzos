@@ -6,7 +6,7 @@ export default {
             <p>RESULT</p>
             <div class="result__circle-progress-bar" id="js-progress-bar">
               <div class="result__circle-progress-bar__value" id="js-value-progress-bar">
-                75%
+                0%
               </div>
             </div>
             <span class="result__nb-good-answer"><span id="goodAnswer"></span> out of <span id="nbOfQuestions"></span></span>
