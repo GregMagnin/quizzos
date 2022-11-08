@@ -26,7 +26,6 @@ export default {
         let scaleDownFromBottom = await import('../../src/animations/scaleDownFromBottom.js');
         Array.from(categories).forEach((categorie) => {
             categorie.addEventListener('click', async () => {
-                console.log("ok")
                 await (scaleDownFromBottom.default)('categories');
             });
         })
