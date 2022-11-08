@@ -1,29 +1,29 @@
 {
-  "name": "quizzos",
-  "version": "1.0.0",
-  "description": "Quizzos, the official quiz made by the dreamteam using the quiz API.",
-  "main": "src/main.js",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "host": "vite --host",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite build"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "gsap": "^3.11.3",
-    "sass": "^1.26.11",
-    "scss": "^0.2.4",
-    "vite": "^3.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/onlineformapro/ofp-working/05-quizup/quizzos-sylvain-greg-thibault-max.git"
-  },
-  "bugs": {
-    "url": "https://gitlab.com/onlineformapro/ofp-working/05-quizup/quizzos-sylvain-greg-thibault-max/issues"
-  },
-  "homepage": "https://gitlab.com/onlineformapro/ofp-working/05-quizup/quizzos-sylvain-greg-thibault-max#readme"
+    "name": "quizzos",
+    "version": "1.0.0",
+    "description": "Quizzos, the official quiz made by the dreamteam using the quiz API.",
+    "main": "src/main.js",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "host": "vite --host",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "vite build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "gsap": "^3.11.3",
+        "sass": "^1.26.11",
+        "scss": "^0.2.4",
+        "vite": "^3.2.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/onlineformapro/ofp-working/05-quizup/quizzos-sylvain-greg-thibault-max.git"
+    },
+    "bugs": {
+        "url": "https://gitlab.com/onlineformapro/ofp-working/05-quizup/quizzos-sylvain-greg-thibault-max/issues"
+    },
+    "homepage": "https://gitlab.com/onlineformapro/ofp-working/05-quizup/quizzos-sylvain-greg-thibault-max#readme"
 }

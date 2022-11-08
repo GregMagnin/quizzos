@@ -1,113 +1,113 @@
 @use '../abstracts/placeholders';
 
 .level-page {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  background-color: #FFFF00;
-  height: 100vh;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    background-color: #FFFF00;
+    height: 100vh;
 }
 
 .green-circle-top-left {
-  background-color: #00C944;
-  border-radius: 100%;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 3;
-  left: 0px;
-  top: -350px;
-  transform: rotate(45deg);
-  border: 5px solid black;
+    background-color: #00C944;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    left: 0px;
+    top: -350px;
+    transform: rotate(45deg);
+    border: 5px solid black;
 }
 
 .green-circle-top-left::after {
-  content: '';
-  background-color: #A6F3C0;
-  border-radius: 100%;
-  width: 60vw;
-  height: 60vh;
-  position: absolute;
-  bottom: 40px;
-  transform: rotate(190deg);
+    content: '';
+    background-color: #A6F3C0;
+    border-radius: 100%;
+    width: 60vw;
+    height: 60vh;
+    position: absolute;
+    bottom: 40px;
+    transform: rotate(190deg);
 }
 
 
 .green-circle-right {
-  background-color: #00C944;
-  border-radius: 100%;
-  width: 150%;
-  height: 100%;
-  position: absolute;
-  z-index: 3;
-  right: -500px;
-  bottom: -100px;
-  transform: rotate(-90deg);
-  border: 5px solid black;
+    background-color: #00C944;
+    border-radius: 100%;
+    width: 150%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    right: -500px;
+    bottom: -100px;
+    transform: rotate(-90deg);
+    border: 5px solid black;
 }
 
 .green-circle-right::after {
-  content: '';
-  background-color: #A6F3C0;
-  border-radius: 100%;
-  width: 150vw;
-  height: 100vh;
-  position: absolute;
-  left: -20px;
-  top: 70px;
+    content: '';
+    background-color: #A6F3C0;
+    border-radius: 100%;
+    width: 150vw;
+    height: 100vh;
+    position: absolute;
+    left: -20px;
+    top: 70px;
 }
 
 .green-circle-bottom-left {
-  background-color: #00C944;
-  border-radius: 100%;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 3;
-  border: 5px solid black;
-  bottom: -550px;
-  transform: rotate(-45deg);
+    background-color: #00C944;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    border: 5px solid black;
+    bottom: -550px;
+    transform: rotate(-45deg);
 }
 
 .green-circle-bottom-left::after {
-  content: '';
-  background-color: #A6F3C0;
-  border-radius: 100%;
-  width: 60vw;
-  height: 60vh;
-  position: absolute;
+    content: '';
+    background-color: #A6F3C0;
+    border-radius: 100%;
+    width: 60vw;
+    height: 60vh;
+    position: absolute;
 }
 
 .level-box-4 {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .title-box-level {
-  font-size: clamp(32px, 40px, 40px);
-  @extend %title-box;
-  height: 23.7vh;
-  margin-top: 7vh;
-  z-index: 15;
-  position: relative;
-  display: flex;
-  justify-content: center;
+    font-size: clamp(32px, 40px, 40px);
+    @extend %title-box;
+    height: 23.7vh;
+    margin-top: 7vh;
+    z-index: 15;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .level-box {
-  @extend %number-box;
-  margin-bottom: 3.5vh;
-  height: 12vh;
-  z-index: 15;
-  font-size: 2.7rem;
+    @extend %number-box;
+    margin-bottom: 3.5vh;
+    height: 12vh;
+    z-index: 15;
+    font-size: 2.7rem;
 }
 
 .level-box {
-  position: relative;
-  z-index: 15;
+    position: relative;
+    z-index: 15;
 }
 
 .level-box:active {
-  top: 10px;
-  left: 10px;
-  box-shadow: 0px 0px black;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0px 0px black;
 }

@@ -9,9 +9,8 @@ let nbOfQuestionsText = document.getElementById("nbOfQuestions");
 nbOfQuestionsText.innerText = localStorage.getItem("questions");
 
 let progressValue = 0;
-let speedAnimation = 25;
 let progressEndValue = Math.trunc((goodAnswer / nbOfQuestions) * 100);
-console.log(progressEndValue);
+let speedAnimation = 25;
 
 if (goodAnswer > 0) {
     let progressAnimation = setInterval(() => {
@@ -21,7 +20,7 @@ if (goodAnswer > 0) {
             #ED8681 ${progressValue * 3.6}deg,
             #e0d3d5 ${progressValue * 3.6}deg
         )`;
-        if (progressValue === progressEndValue) {
+        if (progressValue == progressEndValue) {
             clearInterval(progressAnimation);
         }
     }, speedAnimation);

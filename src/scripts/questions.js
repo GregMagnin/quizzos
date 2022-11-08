@@ -23,7 +23,8 @@ export default async () => {
     let categoryresponse = "";
     let levelresponse = "";
     loading.style.display = "flex";
-
+    let randomNumber =  Math.floor(Math.random() * 2)
+    console.log(randomNumber);
     if (localStorage.getItem('categorie') !== null ) {
         categoryresponse = `&category=${localStorage.getItem('categorie')}`
     }
@@ -32,6 +33,90 @@ export default async () => {
         levelresponse = `&difficulty=${localStorage.getItem('level')}`
     }
 
+    if (localStorage.getItem('level') === 'Legend' ) {
+        async function getOurApi() {
+            let response = await fetch('../../api/api.json');
+            return await response.json();
+        }
+        let ourApi = await getOurApi()
+        
+        
+        loading.style.display = "none";
+    const TIMER = (async function timing(){
+        let sec = 30;
+        timer = setInterval(() => {
+           sec = sec < 10 ? "0" + sec : sec;
+            timerElement.innerHTML = sec;
+            sec = sec <= 0 ? 0: sec - 1
+            if (sec === 0) {
+                iteration_question++;
+                localStorage.setItem('iteration_question', (iteration_question.toString()));
+                setTimeout(document.location.reload(true), 2000);
+            }
+        }, 1000)
+    })()
+
+    if (ourApi[0]['multiple_correct_answers'] === 'false') {
+        let answers_list = ourApi[randomNumber]['answers'];
+            iteration.innerText = localStorage.getItem('iteration_question');
+            quest.innerText = ourApi[randomNumber]['question'];
+            if (remaining_questions > 1){
+                remaining_quest.innerText = `${remaining_questions.toString()} questions left !`;
+            } else if (remaining_questions === 1){
+                remaining_quest.innerText = `${remaining_questions.toString()} question left !`;
+            } else {
+                remaining_quest.innerText = 'Last question !'
+            }
+    
+            for (let answer of Object.entries(answers_list)) {
+                if (answer[1] !== null) {
+                    let answer_box = document.createElement('span');
+                    answer_box.classList.add('answer');
+                    answer_box.setAttribute("id", answer[0]);
+                    answer_box.innerText = answer[1].toString();
+                    answers.appendChild(answer_box);
+                }
+            }
+    
+            answers.addEventListener('click', async (e) => {
+                let good_answers = ourApi[0]['correct_answers']
+                let good_answer = '';
+                for (let answer in good_answers) {
+                    if (good_answers[answer] === 'true') {
+                        good_answer = answer.split('_')[0] + '_' + answer.split('_')[1];
+                        
+                    }
+                }
+    
+                let goodAnswerElement = document.getElementById(good_answer);
+                let answers_red = document.querySelectorAll('.answer');
+                for (let answer_red of answers_red) {
+                answer_red.style.backgroundColor = "rgb(255,39,39)";
+                }
+                goodAnswerElement.style.backgroundColor = "rgb(0, 201, 68)";
+    
+                if (goodAnswerElement === e.target) {
+                    number_good_answers++;
+                    localStorage.setItem("number_good_answers", (number_good_answers.toString()));
+                }
+                if (number_question > iteration_question) {
+                    iteration_question++;
+                    localStorage.setItem('iteration_question', (iteration_question.toString()));
+                    setTimeout(() => {
+                        document.location.reload();
+                    }, 1000);
+                } else {
+                    setTimeout(() => {
+                        document.location.href = '#result';
+                    }, 1000);
+                }
+            })
+        }
+        else {
+            document.location.reload();
+        }
+        
+    } else {
     
     async function getDataAsync() {
         let response = await fetch(ENDPOINT + categoryresponse + levelresponse, initHeader);
@@ -114,4 +199,5 @@ if (response[0]['multiple_correct_answers'] === 'false') {
     else {
         document.location.reload();
     }
+}
 }

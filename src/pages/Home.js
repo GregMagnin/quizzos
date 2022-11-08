@@ -18,6 +18,7 @@ export default {
 
     },
     after_render: async () => {
+      
 
         let jaw = await import("../components/jaw");
         let homepage_section = document.getElementById("homepage");
