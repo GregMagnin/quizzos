@@ -1,7 +1,9 @@
 .number-question-page {
-    width: 100%;
+    width: 100vw;
     position: relative;
-    z-index: -99;
+    z-index: 99;
+    background-color: #4ED7F4;
+
 }
 
 .title-box {
@@ -25,7 +27,6 @@
     position: absolute;
     z-index: -5;
     transform: rotate(165deg);
-    border: 5px black solid;
     left: -350px;
     top: -100px;
 }
