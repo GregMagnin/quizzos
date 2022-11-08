@@ -41,7 +41,7 @@ export default {
         let rotateFall = await import('../../src/animations/rotateFallLeft.js');
         start.addEventListener('click', async (e) => {
             await (rotateFall.default)();
-            await import('../animations/timer.js');
+            
         });
 
     }
