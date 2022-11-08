@@ -1,3 +1,48 @@
-{
-    
-}
+[
+	{
+		"id": 1,
+		"question": "Qui a le plus gros cerveau?",
+		"description": null,
+		"answers": {
+			"answer_a": "C'est moi",
+			"answer_b": "Bonjour",
+			"answer_c": "5577115",
+			"answer_d": null,
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "true",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_b"
+    },
+	{
+		"id": 2,
+		"question": "Qui veut manger du 4 quart",
+		"description": null,
+		"answers": {
+			"answer_a": "Lepen",
+			"answer_b": "Macron",
+			"answer_c": "Mélenchon",
+			"answer_d": null,
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "true",
+			"answer_b_correct": "false",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_a"
+    }
+]
