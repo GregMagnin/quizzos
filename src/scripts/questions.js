@@ -23,7 +23,8 @@ export default async () => {
     let categoryresponse = "";
     let levelresponse = "";
     loading.style.display = "flex";
-
+    let randomNumber =  Math.floor(Math.random() * 2)
+    console.log(randomNumber);
     if (localStorage.getItem('categorie') !== null ) {
         categoryresponse = `&category=${localStorage.getItem('categorie')}`
     }
@@ -37,8 +38,8 @@ export default async () => {
             let response = await fetch('../../api/api.json');
             return await response.json();
         }
-        console.log(getOurApi());
         let ourApi = await getOurApi()
+        console.log(ourApi[randomNumber]);
         for (let question in ourApi) {
         
         loading.style.display = "none";
@@ -57,9 +58,9 @@ export default async () => {
     })()
 
     if (ourApi[0]['multiple_correct_answers'] === 'false') {
-        let answers_list = ourApi[0]['answers'];
+        let answers_list = ourApi[randomNumber]['answers'];
             iteration.innerText = localStorage.getItem('iteration_question');
-            quest.innerText = ourApi[0]['question'];
+            quest.innerText = ourApi[randomNumber]['question'];
             if (remaining_questions > 1){
                 remaining_quest.innerText = `${remaining_questions.toString()} questions left !`;
             } else if (remaining_questions === 1){
