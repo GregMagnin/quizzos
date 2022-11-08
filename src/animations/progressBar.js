@@ -11,7 +11,6 @@ nbOfQuestionsText.innerText = localStorage.getItem("questions");
 let progressValue = 0;
 let speedAnimation = 25;
 let progressEndValue = Math.trunc((goodAnswer / nbOfQuestions) * 100);
-console.log(progressEndValue);
 
 if (goodAnswer > 0) {
     let progressAnimation = setInterval(() => {
