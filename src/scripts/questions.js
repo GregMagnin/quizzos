@@ -25,11 +25,11 @@ export default async () => {
     loading.style.display = "flex";
 
     if (localStorage.getItem('categorie') !== null ) {
-        categoryresponse = "&category=" + localStorage.getItem('categorie')
+        categoryresponse = `&category=${localStorage.getItem('categorie')}`
     }
 
     if (localStorage.getItem('level') !== null ) {
-        levelresponse = "&difficulty=" + localStorage.getItem('level')
+        levelresponse = `&difficulty=${localStorage.getItem('level')}`
     }
 
     
@@ -43,7 +43,7 @@ export default async () => {
     const TIMER = (async function timing(){
         let sec = 30;
         timer = setInterval(() => {
-           sec = sec < 10 ? "0" + sec : sec;
+           sec = sec < 10 ? `0${sec}` : sec;
             timerElement.innerHTML = sec;
             sec = sec <= 0 ? 0: sec - 1
             if (sec === 0) {
@@ -83,7 +83,7 @@ if (response[0]['multiple_correct_answers'] === 'false') {
             let good_answer = '';
             for (let answer in good_answers) {
                 if (good_answers[answer] === 'true') {
-                    good_answer = answer.split('_')[0] + '_' + answer.split('_')[1];
+                    good_answer = `${answer.split('_')[0]}_${answer.split('_')[1]}`;
                 }
             }
 
