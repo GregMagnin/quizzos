@@ -24,7 +24,6 @@ export default async () => {
     let levelresponse = "";
     loading.style.display = "flex";
     let randomNumber =  Math.floor(Math.random() * 2)
-    console.log(randomNumber);
     if (localStorage.getItem('categorie') !== null ) {
         categoryresponse = `&category=${localStorage.getItem('categorie')}`
     }
@@ -56,7 +55,7 @@ export default async () => {
         }, 1000)
     })()
 
-    if (ourApi[0]['multiple_correct_answers'] === 'false') {
+    if (ourApi[randomNumber]['multiple_correct_answers'] === 'false') {
         let answers_list = ourApi[randomNumber]['answers'];
             iteration.innerText = localStorage.getItem('iteration_question');
             quest.innerText = ourApi[randomNumber]['question'];
@@ -79,7 +78,7 @@ export default async () => {
             }
     
             answers.addEventListener('click', async (e) => {
-                let good_answers = ourApi[0]['correct_answers']
+                let good_answers = ourApi[randomNumber]['correct_answers']
                 let good_answer = '';
                 for (let answer in good_answers) {
                     if (good_answers[answer] === 'true') {
