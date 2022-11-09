@@ -4,7 +4,6 @@ export default {
       <section class="timer-page" id="timer">
     <div class="square-top"></div>
     <div class="square-bottom"></div>
-
         <div class="counter" data-animation>
   <svg id="tracker">
     <circle id="outer_circle" class="st0" cx="50%" cy="50%"  fill="none"  />
@@ -21,5 +20,5 @@ export default {
     after_render: async () => {
         await import('../animations/timer.js');
         await import('../scripts/start-quiz.js');
-    }
+     }
 }
