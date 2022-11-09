@@ -1,5 +1,5 @@
 .timer-page {
-    background-color: #6B7AFF;
+    background-color: #939eff;
 
     .square-bottom {
         width: 210vw;
@@ -17,9 +17,19 @@
             width: 230vw;
             height: 120vh;
             background: #FF7B52;
-            top: 10%;
+            top: 12%;
             position: absolute;
         }
+
+        &:after {
+            content: '';
+            width: 400vw;
+            height: 25vh;
+            background: #6B7AFF;
+            top: -26%;
+            position: absolute;
+        }
+
     }
 
     .square-top {
@@ -40,11 +50,12 @@
             content: '';
             background: #FF7B52;
             position: absolute;
-            top: -25%;
+            top: -30%;
             z-index: 999;
         }
     }
 }
+
 
 .counter {
     --duration: 0s;
