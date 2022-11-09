@@ -23,7 +23,7 @@ export default async () => {
     let categoryresponse = "";
     let levelresponse = "";
     loading.style.display = "flex";
-    let randomNumber =  Math.floor(Math.random() * 2)
+    let randomNumber =  Math.floor(Math.random() * 27)
     if (localStorage.getItem('categorie') !== null ) {
         categoryresponse = `&category=${localStorage.getItem('categorie')}`
     }
