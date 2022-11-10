@@ -1,12 +1,35 @@
 [
 	{
 		"id": 1,
-		"question": "Qui a le plus gros cerveau?",
+		"question": "Qui est plus beau que Johnny ?",
 		"description": null,
 		"answers": {
-			"answer_a": "C'est moi",
-			"answer_b": "Bonjour",
-			"answer_c": "5577115",
+			"answer_a": "Greg",
+			"answer_b": "Max",
+			"answer_c": "Tibo",
+			"answer_d": "Sylvain",
+			"answer_e": "Personne",
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "true",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_e"
+    },
+	{
+		"id": 2,
+		"question": "Qui à créé une navbar de 800 lignes ? ",
+		"description": null,
+		"answers": {
+			"answer_a": "Théo",
+			"answer_b": "Oussama",
+			"answer_c": "Kevin",
 			"answer_d": null,
 			"answer_e": null,
 			"answer_f": null
@@ -23,13 +46,128 @@
 		"correct_answer": "answer_b"
     },
 	{
-		"id": 2,
-		"question": "Qui veut manger du 4 quart",
+		"id": 3,
+		"question": "Que signifie l'expression attriqué comme la chienne à Jacques",
+        "description": null,
+        "answers": {
+            "answer_a": "être mal habillé",
+            "answer_b": "marcher lentement",
+            "answer_c": "être très mignon",
+            "answer_d": "être malade",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a"
+    },
+	{
+		"id": 4,
+		"question": "A quel personne fait référence le nom Quizzos ?",
 		"description": null,
 		"answers": {
-			"answer_a": "Lepen",
+			"answer_a": "Squeezie",
 			"answer_b": "Macron",
-			"answer_c": "Mélenchon",
+			"answer_c": "LE SQUIIIIIZ",
+			"answer_d": "Full random en vrai",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "true",
+			"answer_b_correct": "false",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_a"
+    },
+	{
+		"id": 5,
+		"question": "Lorsqu’un pancake tombe dans la neige avant le 31 décembre, on dit :",
+        "description": null,
+        "answers": {
+            "answer_a": "Que c’est un pancake qui est tombé dans la neige avant le 31 décembre ?",
+            "answer_b": "Que c’est une Kippa surgelée ?",
+            "answer_c": "Que c’est un frisbee comestible ?",
+            "answer_d": "La réponse D",
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "true",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_b"
+    },
+	{
+		"id": 6,
+		"question": "Qu'est ce qui à changé ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Le rap",
+			"answer_b": "La politique",
+			"answer_c": "Le football",
+			"answer_d": "les études",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "true",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_c"
+    },
+	{
+		"id": 7,
+		"question": "En quoi consiste l'eukonkanto ",
+        "description": null,
+        "answers": {
+            "answer_a": "Une descente de colline en courant derrière un fromage",
+            "answer_b": "Le curling finlandais",
+            "answer_c": "Faire une course d'obstacle tout en portant une femme",
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "false",
+            "answer_b_correct": "false",
+            "answer_c_correct": "true",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_c"
+    },
+	{
+		"id": 8,
+		"question": "Qui n'a pas élevé un faible ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Ta mère",
+			"answer_b": "Ton père",
+			"answer_c": null,
 			"answer_d": null,
 			"answer_e": null,
 			"answer_f": null
@@ -44,5 +182,420 @@
 			"answer_f_correct": "false"
 		},
 		"correct_answer": "answer_a"
+    },
+	{
+		"id": 9,
+		"question": "De quelle marque est la chaussure ?",
+		"description": null,
+		"answers": {
+			"answer_a": "c'est Puma",
+			"answer_b": "c'est Adidas",
+			"answer_c": "c'est Reebok",
+			"answer_d": "c'est Nike",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "false",
+			"answer_d_correct": "true",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_d"
+    },
+	{
+		"id": 10,
+		"question": "Qui a crée le prix nobel ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Darwin",
+			"answer_b": "Nobel",
+			"answer_c": "Curie",
+			"answer_d": null,
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "true",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_b"
+    },
+	{
+		"id": 11,
+		"question": "Quand est entré en vigueur le traité de Maastricht ?",
+		"description": null,
+		"answers": {
+			"answer_a": "7 février 1992",
+			"answer_b": "1er novembre 1993",
+			"answer_c": "3 juin 1994",
+			"answer_d": null,
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "true",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_b"
+    },
+	{
+		"id": 12,
+		"question": "Combien de degré mesure un angle plat ?",
+		"description": null,
+		"answers": {
+			"answer_a": "45deg",
+			"answer_b": "90deg",
+			"answer_c": "180deg",
+			"answer_d": "La réponse D",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "true",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_c"
+    },
+	{
+		"id": 13,
+		"question": "Quelle est l'expression appropriée :",
+        "description": null,
+        "answers": {
+            "answer_a": "Fuck le PHP",
+            "answer_b": "Fuck le JS",
+            "answer_c": "Fuck Tailwind",
+            "answer_d": null,
+            "answer_e": null,
+            "answer_f": null
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+            "answer_a_correct": "true",
+            "answer_b_correct": "false",
+            "answer_c_correct": "false",
+            "answer_d_correct": "false",
+            "answer_e_correct": "false",
+            "answer_f_correct": "false"
+        },
+        "correct_answer": "answer_a"
+    },
+	{
+		"id": 14,
+		"question": "Quelle est la probabilité de tirer un roi dans un jeu de 52 cartes ?",
+		"description": null,
+		"answers": {
+			"answer_a": "8/52",
+			"answer_b": "4/52",
+			"answer_c": "7/52",
+			"answer_d": "La réponse D",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "true",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_b"
+    },
+	{
+		"id": 15,
+		"question": "Qu'est ce qu'un PNJ ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Un format de photo numérique",
+			"answer_b": "Des personnages non joueurs",
+			"answer_c": "Les élèves d'une classe",
+			"answer_d": null,
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "true",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_b"
+    },
+	{
+		"id": 16,
+		"question": "Ou vie le lutin grognon ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Dans la grotte de la tristesse",
+			"answer_b": "Sous un pont",
+			"answer_c": "Dans un camion",
+			"answer_d": "Dans une classe de cours",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "true",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_b"
+    },
+	{
+		"id": 17,
+		"question": "Quelle est la bonne ortographe ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Notament",
+			"answer_b": "Nottament",
+			"answer_c": "Notamment",
+			"answer_d": "Nottamment",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "true",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_c"
+    },
+	{
+		"id": 18,
+		"question": "Dans quel pays peut-on trouver la Catalogne ?",
+		"description": null,
+		"answers": {
+			"answer_a": "La France",
+			"answer_b": "L'Italie",
+			"answer_c": "Les USA",
+			"answer_d": "Le Maroc",
+			"answer_e": "L'espagne",
+			"answer_f": "Le Royaume-Uni"
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "true",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_e"
+    },
+	{
+		"id": 19,
+		"question": "Quelle est la bonne ortographe ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Fuschia",
+			"answer_b": "Fushia",
+			"answer_c": "Fuchia",
+			"answer_d": "Fuchsia",
+			"answer_e": "Personne prononce ce mot",
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "false",
+			"answer_d_correct": "true",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_d"
+    },
+	{
+		"id": 20,
+		"question": "Quelle est la bonne ortographe ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Notament",
+			"answer_b": "Nottament",
+			"answer_c": "Notamment",
+			"answer_d": "Nottamment",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "true",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_c"
+    },
+	{
+		"id": 21,
+		"question": "Que signifie Kyoto ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Ville capitale",
+			"answer_b": "Ville morte",
+			"answer_c": "Ville énergique",
+			"answer_d": "Ville lumineuse",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "true",
+			"answer_b_correct": "false",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_a"
+    },
+	{
+		"id": 22,
+		"question": "Le chiffre des dixièmes dans le nombre 45,21 est ?",
+		"description": null,
+		"answers": {
+			"answer_a": "4",
+			"answer_b": "2",
+			"answer_c": "1",
+			"answer_d": "21",
+			"answer_e": "5",
+			"answer_f": "18"
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "true",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_b"
+    },
+	{
+		"id": 23,
+		"question": "Combien y a t-il de fautes dans la phrase: Sophie court dans le champ ?",
+		"description": null,
+		"answers": {
+			"answer_a": "0",
+			"answer_b": "1",
+			"answer_c": "2",
+			"answer_d": "3",
+			"answer_e": "Partout",
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "true",
+			"answer_b_correct": "false",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_a"
+    },
+	{
+		"id": 24,
+		"question": "Trouver le résultat de : 4 + 4/2-2x(2-2))",
+		"description": null,
+		"answers": {
+			"answer_a": "8",
+			"answer_b": "6",
+			"answer_c": "2",
+			"answer_d": "0",
+			"answer_e": "854752",
+			"answer_f": "La réponse F"
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "true",
+			"answer_c_correct": "false",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_b"
+    },
+	{
+		"id": 25,
+		"question": "Quelle est la ville la plus peuplée d'Afrique ?",
+		"description": null,
+		"answers": {
+			"answer_a": "Johannesburg",
+			"answer_b": "Rabat",
+			"answer_c": "Alger",
+			"answer_d": "Lagos",
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "false",
+			"answer_d_correct": "true",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_d"
+    },
+	{
+		"id": 26,
+		"question": "Que signifie Acmé ?",
+		"description": null,
+		"answers": {
+			"answer_a": "La création de quelque chose",
+			"answer_b": "L'apogée de quelque chose",
+			"answer_c": null,
+			"answer_d": null,
+			"answer_e": null,
+			"answer_f": null
+		},
+		"multiple_correct_answers": "false",
+		"correct_answers": {
+			"answer_a_correct": "false",
+			"answer_b_correct": "false",
+			"answer_c_correct": "true",
+			"answer_d_correct": "false",
+			"answer_e_correct": "false",
+			"answer_f_correct": "false"
+		},
+		"correct_answer": "answer_c"
     }
+	
 ]
