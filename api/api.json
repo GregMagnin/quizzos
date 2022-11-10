@@ -352,20 +352,20 @@
 			"answer_a": "Dans la grotte de la tristesse",
 			"answer_b": "Sous un pont",
 			"answer_c": "Dans un camion",
-			"answer_d": "Au fond de la classe",
+			"answer_d": "Dans une classe de cours",
 			"answer_e": null,
 			"answer_f": null
 		},
 		"multiple_correct_answers": "false",
 		"correct_answers": {
 			"answer_a_correct": "false",
-			"answer_b_correct": "false",
+			"answer_b_correct": "true",
 			"answer_c_correct": "false",
-			"answer_d_correct": "true",
+			"answer_d_correct": "false",
 			"answer_e_correct": "false",
 			"answer_f_correct": "false"
 		},
-		"correct_answer": "answer_d"
+		"correct_answer": "answer_b"
     },
 	{
 		"id": 17,
