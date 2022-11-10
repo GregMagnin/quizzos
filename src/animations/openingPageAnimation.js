@@ -5,8 +5,8 @@ const UPSQUARE = document.querySelector(".rectangle-form-top");
 const DOWN = document.querySelector(".teeth-form-down");
 const DOWNSQUARE = document.querySelector(".rectangle-form-bottom");
 
-UP.style.top = "-1%";
-DOWN.style.bottom = 0;
+UP.style.top = "-10%";
+DOWN.style.bottom = "0%";
 UPSQUARE.style.top = 0;
 DOWNSQUARE.style.bottom = 0;
 
