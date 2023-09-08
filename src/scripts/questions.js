@@ -62,8 +62,6 @@ export default async () => {
         }
         randomIndex = randomNumber();
 
-        console.log(usedIndicesInLocalStorage);
-
         loading.style.display = "none";
         const TIMER = (async function timing() {
             let sec = 30;
