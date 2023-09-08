@@ -63,21 +63,24 @@ export default async () => {
         randomIndex = randomNumber();
 
         console.log(usedIndicesInLocalStorage);
-        
+
         loading.style.display = "none";
-        // const TIMER = (async function timing(){
-        //     let sec = 30;
-        //     timer = setInterval(() => {
-        //        sec = sec < 10 ? "0" + sec : sec;
-        //         timerElement.innerHTML = sec;
-        //         sec = sec <= 0 ? 0: sec - 1
-        //         if (sec === 0) {
-        //             iteration_question++;
-        //             localStorage.setItem('iteration_question', (iteration_question.toString()));
-        //             setTimeout(document.location.reload(true), 2000);
-        //         }
-        //     }, 1000)
-        // })()
+        const TIMER = (async function timing() {
+            let sec = 30;
+            timer = setInterval(() => {
+                sec = sec < 10 ? "0" + sec : sec;
+                timerElement.innerHTML = sec;
+                sec = sec <= 0 ? 0 : sec - 1;
+                if (sec === 0) {
+                    iteration_question++;
+                    localStorage.setItem(
+                        "iteration_question",
+                        iteration_question.toString()
+                    );
+                    setTimeout(document.location.reload(true), 2000);
+                }
+            }, 1000);
+        })();
 
         if (ourApi[randomIndex]["multiple_correct_answers"] === "false") {
             let answers_list = ourApi[randomIndex]["answers"];
